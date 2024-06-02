@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Tajawal", sans-serif;
+  color: #fff;
+  position: relative;
+  direction: rtl; }
+
+button,
+button:focus,
+button:focus-visible,
+input:focus-visible,
+.form-control:focus,
+select:focus-visible,
+.form-select:focus {
+  outline: 0 !important;
+  box-shadow: none !important; }
+
+nav {
+  background: #fff;
+  backdrop-filter: blur(7px);
+  position: fixed !important;
+  width: 100%;
+  min-height: 91px;
+  z-index: 1000; }
+  nav .logo a {
+    color: #333333;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none; }
+    nav .logo a p {
+      margin-bottom: 0px !important; }
+  @media (min-width: 992px) {
+    nav .logo {
+      width: 22%; } }
+  nav .navbar-nav .nav-item {
+    position: relative; }
+    nav .navbar-nav .nav-item .nav-link {
+      color: #64748B !important;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px; }
+    nav .navbar-nav .nav-item.active .nav-link {
+      color: #00AB67 !important; }
+      nav .navbar-nav .nav-item.active .nav-link svg path {
+        fill: #00AB67 !important; }
+      nav .navbar-nav .nav-item.active .nav-link.home svg path {
+        stroke: #00AB67 !important;
+        fill: none !important; }
+    nav .navbar-nav .nav-item.active::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      border-radius: 10px;
+      background-color: #00AB67 !important;
+      position: absolute;
+      bottom: -30px;
+      right: 1px; }
+      @media (max-width: 992px) {
+        nav .navbar-nav .nav-item.active::after {
+          width: 0; } }
+  nav .right-elements .nav-item .nav-link p {
+    padding-right: 6px;
+    font-size: 16px;
+    font-weight: 500; }
+  nav .right-elements .nav-item .nav-link.dropdown-toggle::after {
+    display: none !important; }
+  nav .right-elements .nav-item .nav-link svg:hover path {
+    stroke: #00AB67; }
+  @media (min-width: 992px) {
+    nav {
+      height: 91px; } }
+
+.nav-link span {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 22px;
+  border: 1px solid #fff;
+  padding: 7px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0px 10px 20px 0px rgba(119, 126, 144, 0.1); }
+
+footer {
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.61), rgba(22, 22, 22, 0.548)), url("../imgs/Rectangle 5 (1).png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 40px; }
+  footer .nav-link {
+    padding: 10px 0px 10px 15px !important; }
+    footer .nav-link span {
+      width: 44px !important;
+      height: 44px !important;
+      font-size: 22px !important; }
+  footer h6 {
+    font-size: 17px;
+    margin-bottom: 13px; }
+  footer .copy-right {
+    font-weight: 300 !important;
+    font-size: 15px;
+    padding-top: 25px; }
+  footer span {
+    font-weight: 200 !important;
+    font-size: 15px;
+    padding-top: 5px; }
+  footer .left-part-content {
+    width: 70%; }
+    @media (min-width: 767px) and (max-width: 992px) {
+      footer .left-part-content {
+        width: 100%; } }
+    @media (max-width: 500px) {
+      footer .left-part-content {
+        width: 100%; } }
+
+body {
+  background-color: black; }
+
+/*# sourceMappingURL=app.css.map */

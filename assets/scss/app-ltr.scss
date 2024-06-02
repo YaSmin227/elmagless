@@ -1,0 +1,67 @@
+body {
+  direction: ltr;
+  text-align: left;
+  //   Header rtl
+  nav {
+    .navbar-nav {
+      .nav-item {
+        &.active {
+          &::after {
+            left: 9px;
+            @media (max-width: 992px) {
+              left: 46%;
+            }
+          }
+        }
+      }
+    }
+    .right-elements {
+      .nav-item {
+        .nav-link {
+          p {
+            padding-left: 6px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  // footer
+  footer {
+    .nav-link {
+      padding: 10px 15px 10px 0px !important;
+    }
+  }
+  // testimonial card
+  .testemonial-card {
+    .comma {
+      right: 50px;
+      left: auto;
+    }
+  }
+}
+// Resturant Branchs
+.resturant-branchs {
+  .branch-details {
+    .branch-box {
+      img {
+        padding-right: 30px;
+        padding-left: auto !important;
+      }
+    }
+  }
+}
+.home-banner {
+  // height: 865px;
+  .carousel-caption {
+    position: absolute;
+    left: 15% !important;
+    right: auto !important;
+    text-align: left !important;
+  }
+}
+.about-restaurant {
+  .about-info {
+    border-radius: 0px 24px 24px 0px !important;
+  }
+}
