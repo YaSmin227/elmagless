@@ -11,9 +11,9 @@
     height: 390px;
     border-radius: 12px;
     max-width: 100%;
-    @media(max-width:767px){
-        max-height: 390px;
-        height: auto !important;
+    @media (max-width: 767px) {
+      max-height: 390px;
+      height: auto !important;
     }
   }
   @media (min-width: 1200px) {
@@ -31,7 +31,7 @@
     &::before {
       position: absolute;
       content: "";
-      right: -53px;
+      right: -52px;
       top: 0px;
       width: 3px;
       height: 44px;
@@ -97,19 +97,52 @@
         padding-right: 2px;
       }
     }
-    .read-more {
-      color: $main-color;
-      font-size: 13px;
-      text-decoration: none;
-      span {
-        margin-right: 10px;
-      }
-    }
+    
     & {
       @media (max-width: 992px) {
         justify-content: flex-start;
       }
     }
+  }
+}
+.event-number {
+  margin-bottom: 50px;
+  .event-date {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ababab73;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    span {
+      color: $text-color;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}
+.join-event {
+  background-color: $main-color;
+  height: 277.82px;
+  padding: 50px 30px;
+  h3 {
+    font-size: 19px;
+  }
+  p {
+    line-height: 22px;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  button {
+    margin-top: 10px;
+    background-color: #fff;
+    color: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    height: 41px;
+    width: 104px;
+  }
+  @media(max-width:992px){
+    margin-top: 30px;
   }
 }
 // Shared Styles
@@ -121,7 +154,7 @@
     color: #fff;
     background-color: $main-color;
     border-radius: 8px;
-    padding: 1px 4px;
+    padding: 1px 9px;
   }
   & {
     @media (max-width: 600px) {
@@ -129,6 +162,15 @@
     }
   }
 }
+.read-more {
+      color: $main-color;
+      font-size: 13px;
+      text-decoration: none;
+      span {
+        margin-right: 10px;
+      }
+    }
+
 .watch-app {
   font-size: 14px;
   color: $main-color;

@@ -24,7 +24,7 @@ body {
     .new-events .new-events-info::before {
       content: "";
       right: auto;
-      left: -53px; }
+      left: -52px; }
       @media (max-width: 400px) {
         .new-events .title::before,
         .new-events .new-events-info::before {
@@ -40,11 +40,36 @@ body {
 .new-events-info .event-type .date span {
   padding-right: 0px;
   padding-left: 2px; }
-.new-events-info .event-type .read-more span {
+
+.read-more span {
   margin-right: 0px;
   margin-left: 10px; }
 
 .watch-app .icon .fa-chevron-left {
   transform: rotate(180deg); }
+
+.news-info .news-item .details {
+  padding-left: 20px;
+  padding-right: 0px; }
+
+.contact-form .nice-select {
+  text-align: left !important; }
+  .contact-form .nice-select:after {
+    left: auto !important;
+    right: 12px !important; }
+
+.send-email button {
+  margin-right: 0px;
+  margin-left: 10px; }
+
+.most-participated .ofline,
+.most-participated .council,
+.most-participated .finished {
+  margin-left: 0px;
+  margin-right: 10px; }
+
+footer .phone span {
+  padding-right: 0px;
+  padding-left: 20px; }
 
 /*# sourceMappingURL=app-ltr.css.map */
