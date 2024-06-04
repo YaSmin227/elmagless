@@ -1,5 +1,5 @@
-.quick-links {
-    .box {
+.quick-links{
+    .box{
         background-color: #ECFDF39C;
         width: 216px;
         height: 174px;
@@ -9,20 +9,22 @@
         justify-content: center;
         border-radius: 10px;
         margin-top: 20px;
-
-        p {
+        p{
             font-size: 24px;
             font-weight: 700;
-            color: $main-color
+            color:$main-color;
+            margin-top: 10px;
         }
     }
-
-    @media(max-width:450px) {
-        .d-flex {
+    @media(max-width:450px){
+        .d-flex{
             justify-content: center !important;
         }
     }
 }
+
+// Main Slider
+
 
 .main-slider {
     margin-top: 40px;

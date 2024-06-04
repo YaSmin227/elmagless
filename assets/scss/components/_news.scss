@@ -1,0 +1,107 @@
+.news-info {
+  .news-item {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #e6e8ec;
+    padding-bottom: 10px;
+    img {
+      width: 446px;
+      height: 188px;
+      border-radius: 17.73px;
+      object-fit: cover;
+      @media (max-width: 1200px) {
+        width: 50% !important;
+        min-width: none;
+      }
+      @media (min-width: 1200px) {
+        min-width: 446px;
+      }
+    }
+    .details {
+      padding-right: 20px;
+      .date {
+        color: #c0c5d0;
+      }
+      p {
+        color: #000;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .read-more {
+        color: #00ab67;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      @media (max-width: 1200px) {
+        width: 50% !important;
+      }
+    }
+  }
+}
+.contact-form {
+  input,
+  textarea,
+  .nice-select {
+    width: 100%;
+    border: 1px solid #e6e8ec;
+    background-color: transparent !important;
+    margin-top: 20px;
+    color: #8b97a8;
+    height: 45px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  textarea {
+    height: 153px;
+  }
+  button {
+    @extend .main-button;
+    width: 50%;
+    justify-content: center;
+  }
+  .nice-select {
+    text-align: right !important;
+    .list {
+      width: 100% !important;
+    }
+    &:after {
+      right: auto !important;
+      left: 12px !important;
+    }
+  }
+}
+
+.news {
+  .event-type {
+    border-bottom: 1px solid #ababab73;
+    padding-bottom: 15px;
+    .details {
+      // padding: 0px !important;
+    }
+    img {
+      width: 63px !important;
+      height: 63px !important;
+      margin-top: 10px !important;
+    }
+  }
+  .note {
+    font-size: 13px !important;
+    padding-top: 4px !important;
+    margin-bottom: 3px !important;
+    width: 90%;
+  }
+}
+
+// Shared
+.note {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #64748b !important;
+  width: 90%;
+  height: 45.8px;
+  // white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

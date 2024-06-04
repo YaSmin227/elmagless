@@ -20,7 +20,27 @@ window.onscroll = function () {
     // header.style.height = "100px";
   }
 }
+// nice slsect
+$(document).ready(function () {
+  $('select').niceSelect();
+});
 
+// owl carousel
+// $('.owl-carousel').owlCarousel({
+//   rtl: true,
+//   loop: true,
+//   margin: 0,
+//   dots: true,
+//   arrow: true,
+//   nav: true,
+//   items: 1,
+//   lazyLoad: true,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   autoplayTimeout: 5000,
+//   autoplayHoverPause: true,
+//   center: true,
+// })
 
 // owl carousel
 $('.owl-carousel').owlCarousel({

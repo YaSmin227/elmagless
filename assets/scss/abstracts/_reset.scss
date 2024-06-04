@@ -10,7 +10,7 @@ body {
   color: #fff;
   // background-color: $main-background;
   position: relative;
-  // direction: rtl;
+  direction: rtl;
   // overflow-x: hidden;
   // border: 10px solid red;
   // &.overlay{
@@ -37,6 +37,17 @@ select:focus-visible,
 .form-select:focus {
   outline: 0 !important;
   box-shadow: none !important;
+}
+
+
+.main-button{
+    background-color: $main-color;
+    padding: 10px;
+    height: 45px;
+    border-radius: 5px;
+    border: 0px solid transparent;
+    color:#fff;
+    font-weight: 600;
 }
 
 .owl-theme {
