@@ -7,29 +7,36 @@ nav {
   min-height: 91px;
   z-index: 1000;
   top: 0;
+
   .logo {
     a {
       color: #333333;
       font-size: 25px;
       font-weight: 600;
       text-decoration: none;
+
       p {
         margin-bottom: 0px !important;
       }
     }
-    @media (min-width: 992px) and(max-width:1220px) {
+
+    @media (min-width: 992px) and (max-width:1220px) {
       width: 20%;
     }
+
     @media (min-width: 1200px) {
       width: 28%;
     }
+
     @media (max-width: 992px) {
       height: 70px;
     }
   }
+
   .navbar-nav {
     .nav-item {
       position: relative;
+
       .nav-link {
         color: $second-color !important;
         text-align: center;
@@ -37,18 +44,22 @@ nav {
         font-style: normal;
         font-weight: 600;
         line-height: 16px;
+
         @media (min-width: 992px) {
           padding-right: 0.7rem !important;
           padding-left: 0.7rem !important;
         }
       }
+
       &.active {
         .nav-link {
           color: $main-color !important;
+
           svg path {
             // stroke: $main-color !important;
             fill: $main-color !important;
           }
+
           &.home {
             svg path {
               stroke: $main-color !important;
@@ -56,6 +67,7 @@ nav {
             }
           }
         }
+
         &::after {
           content: "";
           width: 100%;
@@ -66,6 +78,7 @@ nav {
           bottom: -29px;
           // transform: translate(-50%,-50%);
           right: 1px;
+
           @media (max-width: 992px) {
             // right: 46%;
             width: 0;
@@ -74,6 +87,7 @@ nav {
       }
     }
   }
+
   .right-elements {
     .nav-item {
       .nav-link {
@@ -82,15 +96,18 @@ nav {
           font-size: 16px;
           font-weight: 500;
         }
+
         &.dropdown-toggle::after {
           display: none !important;
         }
+
         svg:hover path {
           stroke: $main-color;
         }
       }
     }
   }
+
   & {
     @media (min-width: 992px) {
       height: 91px;
@@ -116,7 +133,7 @@ nav {
 
 // Toggle button
 .navbar-light {
-  .navbar-toggler{
+  .navbar-toggler {
     border: 0px solid transparent !important;
   }
 }
@@ -126,32 +143,38 @@ nav {
   height: 42px;
   background-color: $main-color;
   width: 100%;
+
   .time {
     height: 42px;
+
     svg {
       margin: 0px 5px;
     }
   }
+
   .left-section {
     height: 42px;
+
     div {
       padding: 0px 20px;
       height: 100%;
       display: flex;
       align-items: center;
+
       a {
         color: #fff;
         text-decoration: none;
       }
     }
+
     .contact {
       border-right: 1px solid #fff;
       border-left: 1px solid #fff;
       height: 50%;
     }
   }
+
   @media (max-width: 410px) {
     font-size: 12px;
   }
 }
-
