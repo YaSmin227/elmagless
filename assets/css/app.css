@@ -521,7 +521,7 @@ footer {
     object-fit: cover; }
     @media (max-width: 1200px) {
       .news-info .news-item img {
-        max-width: 50% !important;
+        width: 50% !important;
         min-width: none; } }
     @media (min-width: 1200px) {
       .news-info .news-item img {
@@ -538,6 +538,9 @@ footer {
       color: #00ab67;
       font-size: 15px;
       text-decoration: none; }
+    @media (max-width: 1200px) {
+      .news-info .news-item .details {
+        width: 50% !important; } }
 
 .contact-form input,
 .contact-form textarea,
@@ -587,7 +590,7 @@ footer {
   text-overflow: ellipsis; }
 
 .most-participated {
-  margin-top: 20px; }
+  margin-top: 40px; }
   .most-participated img {
     width: 422px;
     max-width: 100%;

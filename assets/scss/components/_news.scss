@@ -10,13 +10,12 @@
       border-radius: 17.73px;
       object-fit: cover;
       @media (max-width: 1200px) {
-        max-width: 50% !important;
+        width: 50% !important;
         min-width: none;
       }
-      @media(min-width:1200px){
+      @media (min-width: 1200px) {
         min-width: 446px;
       }
-
     }
     .details {
       padding-right: 20px;
@@ -33,6 +32,9 @@
         color: #00ab67;
         font-size: 15px;
         text-decoration: none;
+      }
+      @media (max-width: 1200px) {
+        width: 50% !important;
       }
     }
   }
@@ -99,6 +101,7 @@
   color: #64748b !important;
   width: 90%;
   height: 45.8px;
+  // white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
