@@ -4,8 +4,17 @@
 @import "abstracts/mixins";
 @import "abstracts/placeholder";
 
+// Layout
 @import "layout/header";
 @import "layout/footer";
+
+// Pages
+@import "pages/home";
+// Components
+@import "components/banner";
+@import "components/next-event";
+@import "components/email";
+
 
 
 

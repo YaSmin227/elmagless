@@ -10,4 +10,41 @@ body {
     padding-left: 6px;
     padding-right: 0; }
 
+.next-event .time svg {
+  margin-right: 5px;
+  padding-left: 0px; }
+
+.new-events {
+  padding-right: 0px;
+  padding-left: 50px; }
+  .new-events .title,
+  .new-events .new-events-info {
+    position: relative; }
+    .new-events .title::before,
+    .new-events .new-events-info::before {
+      content: "";
+      right: auto;
+      left: -53px; }
+      @media (max-width: 400px) {
+        .new-events .title::before,
+        .new-events .new-events-info::before {
+          right: auto;
+          left: -22px; } }
+  @media (max-width: 400px) {
+    .new-events {
+      padding-right: 20px; } }
+
+.new-events-info .event-type .details {
+  padding-right: 0px;
+  padding-left: 20px; }
+.new-events-info .event-type .date span {
+  padding-right: 0px;
+  padding-left: 2px; }
+.new-events-info .event-type .read-more span {
+  margin-right: 0px;
+  margin-left: 10px; }
+
+.watch-app .icon .fa-chevron-left {
+  transform: rotate(180deg); }
+
 /*# sourceMappingURL=app-ltr.css.map */

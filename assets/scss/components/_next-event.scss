@@ -1,0 +1,162 @@
+.next-event {
+  .time {
+    color: $text-color;
+    font-size: 12px;
+    text-align: right;
+    svg {
+      margin-left: 5px;
+    }
+  }
+  img {
+    height: 390px;
+    border-radius: 12px;
+    max-width: 100%;
+    @media(max-width:767px){
+        max-height: 390px;
+        height: auto !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .col-lg-5.col-xl-4 {
+      width: 34.333333% !important;
+    }
+  }
+}
+.new-events {
+  padding-right: 50px;
+  width: 100%;
+  .title,
+  .new-events-info {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      right: -53px;
+      top: 0px;
+      width: 3px;
+      height: 44px;
+      background-color: $main-color;
+      @media (max-width: 400px) {
+        right: -22px;
+      }
+    }
+  }
+  & {
+    @media (max-width: 400px) {
+      padding-right: 20px;
+    }
+  }
+}
+.new-events-info {
+  &::before {
+    top: 30px !important;
+  }
+  .event-type {
+    display: flex;
+    justify-content: space-between;
+    .details {
+      padding-right: 20px;
+    }
+    img {
+      width: 129px;
+      height: 115px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+    .type {
+      font-size: 12px;
+      border-radius: 3px;
+      width: 52px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.council {
+        background-color: #eef4ff;
+        color: #3538cd;
+      }
+      &.meeting {
+        background-color: #fff2f2;
+        color: #f00073;
+      }
+    }
+    p {
+      font-size: 17px;
+      font-family: 500;
+      color: #222222;
+      font-weight: 500;
+      padding-top: 10px;
+      @media (max-width: 400px) {
+        font-size: 14px;
+      }
+    }
+    .date {
+      color: #777777;
+      font-size: 13px;
+      span {
+        padding-right: 2px;
+      }
+    }
+    .read-more {
+      color: $main-color;
+      font-size: 13px;
+      text-decoration: none;
+      span {
+        margin-right: 10px;
+      }
+    }
+    & {
+      @media (max-width: 992px) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+// Shared Styles
+.section-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $text-color;
+  .colored {
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 8px;
+    padding: 1px 4px;
+  }
+  & {
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}
+.watch-app {
+  font-size: 14px;
+  color: $main-color;
+  .icon {
+    text-decoration: none;
+    background-color: $main-color;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    .fa-soild {
+      color: #fff;
+    }
+  }
+}
+.line {
+  width: 1px;
+  height: 100%;
+  background-color: #e6e8ec;
+}
+.description-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: $text-color;
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-color;
+  margin-bottom: 20px;
+}

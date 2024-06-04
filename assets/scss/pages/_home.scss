@@ -1,0 +1,23 @@
+.quick-links{
+    .box{
+        background-color: #ECFDF39C;
+        width: 216px;
+        height: 174px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: 20px;
+        p{
+            font-size: 24px;
+            font-weight: 700;
+            color:$main-color
+        }
+    }
+    @media(max-width:450px){
+        .d-flex{
+            justify-content: center !important;
+        }
+    }
+}

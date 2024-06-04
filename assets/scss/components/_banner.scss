@@ -1,0 +1,23 @@
+.banner {
+  height: 155px;
+  background-color: $main-color;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background:linear-gradient(0deg, #00ab67d8, #00ab67d8),
+   url(/assets/imgs/home/f5ccc3adcaa65b0a1469fbb1a02e8a6b.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+  h3{
+    font-size: 40px;
+    @media(max-width:767px){
+      font-size: 30px;
+    }
+  }
+}
+
+
+

@@ -27,3 +27,65 @@ body {
     }
   }
 }
+
+// next-event
+.next-event {
+  .time {
+    svg {
+      margin-right: 5px;
+      padding-left: 0px;
+    }
+  }
+  
+}
+
+.new-events {
+  padding-right: 0px;
+  padding-left: 50px;
+  .title,
+  .new-events-info {
+    position: relative;
+    &::before {
+      content: "";
+      right: auto;
+      left: -53px;
+      @media (max-width: 400px) {
+        right: auto;
+        left: -22px;
+      }
+    }
+  }
+  & {
+    @media (max-width: 400px) {
+      padding-right: 20px;
+    }
+  }
+}
+.new-events-info {
+  .event-type {
+    .details {
+      padding-right: 0px;
+      padding-left: 20px;
+    }
+    .date {
+      span {
+        padding-right: 0px;
+        padding-left: 2px;
+      }
+    }
+    .read-more {
+      span {
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.watch-app {
+  .icon {
+    .fa-chevron-left {
+      transform: rotate(180deg);
+    }
+  }
+}
