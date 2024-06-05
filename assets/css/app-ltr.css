@@ -57,6 +57,8 @@ body {
   .contact-form .nice-select:after {
     left: auto !important;
     right: 12px !important; }
+  .contact-form .nice-select .option {
+    text-align: left !important; }
 
 .send-email button {
   margin-right: 0px;
@@ -67,6 +69,22 @@ body {
 .most-participated .finished {
   margin-left: 0px;
   margin-right: 10px; }
+
+.form form .form-body .input-group input {
+  padding-left: 40px !important;
+  padding-right: 0px !important; }
+.form form .form-body .input-group .input-icon {
+  right: auto !important;
+  left: 12px; }
+.form form .form-body .input-group .show-hidePassword {
+  left: auto !important;
+  right: 13px; }
+.form form .form-body .remember-me span {
+  padding-left: 8px;
+  padding-right: 0px; }
+.form form .form-body .create-new a {
+  padding-right: 0px;
+  padding-left: 4px; }
 
 footer .phone span {
   padding-right: 0px;

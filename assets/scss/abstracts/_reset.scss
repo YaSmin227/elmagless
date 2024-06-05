@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -39,15 +39,21 @@ select:focus-visible,
   box-shadow: none !important;
 }
 
-
-.main-button{
-    background-color: $main-color;
-    padding: 10px;
-    height: 45px;
-    border-radius: 5px;
-    border: 0px solid transparent;
-    color:#fff;
-    font-weight: 600;
+.main-input {
+  width: 100%;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  padding-right: 15px;
+}
+.main-button {
+  background-color: $main-color;
+  padding: 10px;
+  height: 45px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  color: #fff;
+  font-weight: 600;
 }
 
 .owl-theme {
@@ -63,7 +69,6 @@ select:focus-visible,
     gap: 100px;
 
     button {
-
       &.owl-prev,
       &.owl-next {
         width: 28px;
@@ -87,15 +92,14 @@ select:focus-visible,
     position: relative;
 
     .owl-dot {
-
       span {
-        background: rgba(192, 197, 208, 0.70);
+        background: rgba(192, 197, 208, 0.7);
       }
 
       &.active,
       &:hover {
         span {
-          background: $main-color ;
+          background: $main-color;
         }
       }
     }

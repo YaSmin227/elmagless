@@ -105,6 +105,9 @@ body {
       left: auto !important;
       right: 12px !important;
     }
+    .option{
+      text-align: left !important;
+    }
   }
 }
 
@@ -124,6 +127,45 @@ body {
     margin-left: 0px;
     margin-right: 10px;
   }
+}
+
+
+
+// ************Login ****************//
+.form {
+  form {
+    .form-body {
+      .input-group {
+        input {
+          // @extend  .main-input;
+          padding-left: 40px !important;
+          padding-right: 0px !important;
+        }
+        .input-icon {
+          right: auto !important;
+          left:12px;
+        }
+        .show-hidePassword {
+          left: auto !important;
+          right: 13px;
+        }
+      }
+      .remember-me {
+        span {
+          padding-left: 8px;
+          padding-right: 0px;
+        }
+      }
+      .create-new {
+        a {
+          padding-right: 0px;
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+ 
+ 
 }
 
 // ************* Footer ************* //
