@@ -8,11 +8,12 @@
 @import "layout/header";
 @import "layout/footer";
 
-// Pages
-@import "pages/home";
 // Components
 @import "components/banner";
 @import "components/next-event";
 @import "components/email";
 @import "components/news";
-@import "components/most-participated"
+@import "components/most-participated";
+// Pages
+@import "pages/home";
+@import "pages/events";
