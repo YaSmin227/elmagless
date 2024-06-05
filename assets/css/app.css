@@ -770,7 +770,7 @@ footer {
     font-weight: 400;
     line-height: 63.984px; }
   .events .description {
-    color: #C0C5D0;
+    color: #c0c5d0;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -784,7 +784,7 @@ footer {
     align-items: center;
     gap: 12px;
     border-radius: 12px;
-    border: 1px solid #DEE0E6;
+    border: 1px solid #dee0e6;
     width: fit-content; }
     .events .search input {
       min-width: 420px;
@@ -797,7 +797,7 @@ footer {
       letter-spacing: 0.2px;
       border: none; }
       .events .search input::placeholder {
-        color: #C0C5D0; }
+        color: #c0c5d0; }
 
 .pagination {
   width: 100%;
@@ -810,7 +810,7 @@ footer {
     text-transform: none;
     text-decoration: none;
     display: block;
-    color: #C0C5D0;
+    color: #c0c5d0;
     text-align: right;
     font-family: Tajawal;
     font-size: 16px;
@@ -819,6 +819,22 @@ footer {
     line-height: 150%;
     letter-spacing: 0.2px; }
     .pagination .link.active {
-      color: #00AB67; }
+      color: #00ab67; }
+
+.event-blog .news-info {
+  padding-right: 20px;
+  position: relative; }
+  .event-blog .news-info .news-item img {
+    width: 202px !important;
+    min-width: 202px !important;
+    height: 188px; }
+  .event-blog .news-info:before {
+    position: absolute;
+    content: "";
+    right: -2px;
+    top: 0px;
+    width: 3px;
+    height: 195px;
+    background-color: #00ab67; }
 
 /*# sourceMappingURL=app.css.map */

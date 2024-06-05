@@ -18,7 +18,7 @@
   }
 
   .description {
-    color: #C0C5D0;
+    color: #c0c5d0;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -34,7 +34,7 @@
     align-items: center;
     gap: 12px;
     border-radius: 12px;
-    border: 1px solid #DEE0E6;
+    border: 1px solid #dee0e6;
     width: fit-content;
 
     input {
@@ -49,11 +49,10 @@
       border: none;
 
       &::placeholder {
-        color: #C0C5D0;
+        color: #c0c5d0;
       }
     }
   }
-
 }
 
 .pagination {
@@ -68,7 +67,7 @@
     text-transform: none;
     text-decoration: none;
     display: block;
-    color: #C0C5D0;
+    color: #c0c5d0;
     text-align: right;
     font-family: Tajawal;
     font-size: 16px;
@@ -78,7 +77,31 @@
     letter-spacing: 0.2px;
 
     &.active {
-      color: #00AB67;
+      color: #00ab67;
+    }
+  }
+}
+
+// Events Blog
+.event-blog {
+  .news-info {
+    padding-right: 20px;
+    position: relative;
+    .news-item {
+      img {
+        width: 202px !important;
+        min-width: 202px !important;
+        height: 188px;
+      }
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      right: -2px;
+      top: 0px;
+      width: 3px;
+      height: 195px;
+      background-color: #00ab67;
     }
   }
 }
