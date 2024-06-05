@@ -168,6 +168,22 @@ body {
  
 }
 
+
+// ***********Events*****************//
+.event-blog {
+  .news-info {
+    padding-right: 0px;
+    padding-left: 20px;
+    &:before {
+      position: absolute;
+      content: "";
+      left: -2px;
+      right: auto ;
+    }
+  }
+}
+
+
 // ************* Footer ************* //
 footer {
   .phone {
