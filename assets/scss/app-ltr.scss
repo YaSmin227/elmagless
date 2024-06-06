@@ -105,7 +105,7 @@ body {
       left: auto !important;
       right: 12px !important;
     }
-    .option{
+    .option {
       text-align: left !important;
     }
   }
@@ -129,8 +129,6 @@ body {
   }
 }
 
-
-
 // ************Login ****************//
 .form {
   form {
@@ -143,7 +141,7 @@ body {
         }
         .input-icon {
           right: auto !important;
-          left:12px;
+          left: 12px;
         }
         .show-hidePassword {
           left: auto !important;
@@ -164,10 +162,7 @@ body {
       }
     }
   }
- 
- 
 }
-
 
 // ***********Events*****************//
 .event-blog {
@@ -178,18 +173,78 @@ body {
       position: absolute;
       content: "";
       left: -2px;
-      right: auto ;
+      right: auto;
     }
   }
 }
 
+// ************ Contact Us ************//
+.contact-us {
+  .contact-info {
+    .phone {
+      span,
+      p {
+        padding-right: 0px !important;
+        padding-left: 10px !important;
+      }
+    }
+  }
+}
+.top-img-box {
+  img {
+    .top-box {
+      left: auto;
+      right: -22px;
+      @media (max-width: 767px) {
+        right: 12%;
+        left: auto;
+      }
+    }
+    .bottom-box {
+      right: auto;
+      left: -22px;
+      @media (max-width: 767px) {
+        right: auto;
+        left: 12%;
+      }
+    }
+  }
+}
+// ************* Common Questions *************//
+.common-questions {
+  .accordion-item {
+    .accordion-button {
+      &::after {
+        margin-left: auto !important;
+        margin-right: 0px !important;
+      }
+    }
+  }
+  .accordion-button::after {
+    top: 7px;
+    right: 20px;
+    left: auto;
+  }
+  .accordion-button:not(.collapsed)::after {
+    left: auto;
+    right: 20px;
+  }
+  .accordion-body {
+    text-align: left;
+  }
+  .contact-btn {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
 
 // ************* Footer ************* //
 // footer {
-  .phone {
-    span {
-      padding-right: 0px;
-      padding-left: 20px;
-    }
+.phone {
+  span {
+    padding-right: 0px;
+    padding-left: 20px;
   }
+}
 // }

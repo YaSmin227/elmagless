@@ -95,6 +95,41 @@ body {
     left: -2px;
     right: auto; }
 
+.contact-us .contact-info .phone span,
+.contact-us .contact-info .phone p {
+  padding-right: 0px !important;
+  padding-left: 10px !important; }
+
+.top-img-box img .top-box {
+  left: auto;
+  right: -22px; }
+  @media (max-width: 767px) {
+    .top-img-box img .top-box {
+      right: 12%;
+      left: auto; } }
+.top-img-box img .bottom-box {
+  right: auto;
+  left: -22px; }
+  @media (max-width: 767px) {
+    .top-img-box img .bottom-box {
+      right: auto;
+      left: 12%; } }
+
+.common-questions .accordion-item .accordion-button::after {
+  margin-left: auto !important;
+  margin-right: 0px !important; }
+.common-questions .accordion-button::after {
+  top: 7px;
+  right: 20px;
+  left: auto; }
+.common-questions .accordion-button:not(.collapsed)::after {
+  left: auto;
+  right: 20px; }
+.common-questions .accordion-body {
+  text-align: left; }
+.common-questions .contact-btn svg {
+  transform: rotate(180deg); }
+
 .phone span {
   padding-right: 0px;
   padding-left: 20px; }

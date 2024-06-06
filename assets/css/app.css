@@ -35,7 +35,7 @@ select:focus-visible,
   color: #fff;
   font-weight: 600; }
 
-.shared-p, .contact-us .contact-info p {
+.shared-p, .contact-us .contact-info p, .common-questions .questions-body p {
   font-size: 14px;
   color: #595566; }
 
@@ -97,7 +97,7 @@ nav {
   nav .navbar-nav .nav-item {
     position: relative; }
     nav .navbar-nav .nav-item .nav-link {
-      color: #64748B !important;
+      color: #000;
       text-align: center;
       font-size: 16px;
       font-style: normal;
@@ -909,5 +909,82 @@ footer {
       .top-img-box .bottom-box {
         right: 12%;
         bottom: -6%; } }
+
+.common-questions {
+  text-align: center; }
+  .common-questions .questions-body {
+    padding-top: 50px; }
+    @media (min-width: 992px) {
+      .common-questions .questions-body {
+        width: 60%;
+        margin: auto; } }
+    .common-questions .questions-body .section-title {
+      justify-content: center; }
+    .common-questions .questions-body p {
+      line-height: 23.6px; }
+  .common-questions .accordion-item {
+    margin-top: 30px;
+    border: 0px !important; }
+    .common-questions .accordion-item .accordion-button {
+      background-color: #f3fdf7;
+      height: 63px;
+      border-radius: 8px;
+      font-weight: 700; }
+      .common-questions .accordion-item .accordion-button::after {
+        margin-right: auto !important;
+        margin-left: 0px !important; }
+    .common-questions .accordion-item .accordion-button:not(.collapsed) {
+      background-color: #00AB67 !important;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700; }
+  .common-questions .accordion-button::after,
+  .common-questions .accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+    position: absolute;
+    transition: all 0.5s; }
+  .common-questions .accordion-button::after {
+    content: "+";
+    font-size: 38px;
+    top: 7px;
+    left: 20px;
+    color: #00AB67;
+    font-weight: 400; }
+  .common-questions .accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+    content: "-";
+    color: #fff;
+    font-size: 50px;
+    top: 44px;
+    left: 20px;
+    font-family: 400; }
+  .common-questions .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 8px !important; }
+  .common-questions .accordion-button::after {
+    transition: all 0.5s; }
+  .common-questions .accordion-body {
+    text-align: right; }
+  .common-questions h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29.4px;
+    color: #333333;
+    text-align: center;
+    margin-top: 50px; }
+  .common-questions .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 45px;
+    width: 153px;
+    color: #00AB67;
+    outline: none;
+    border: 1px solid #00AB67;
+    font-size: 15px;
+    border-radius: 12px;
+    background: #fff;
+    margin: auto;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=app.css.map */
