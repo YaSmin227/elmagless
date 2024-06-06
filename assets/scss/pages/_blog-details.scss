@@ -1,4 +1,4 @@
-.event-details {
+.blog-details {
   padding-top: 55px;
 
   .tags {
@@ -186,15 +186,15 @@
       line-height: 20px;
     }
 
-    .event-details-card {
+    .blog-details-card {
       margin-top: 25px;
       padding-bottom: 45px;
       display: flex;
       flex-direction: column;
       gap: 20px;
 
-      .event-time,
-      .event-adress {
+      .blog-time,
+      .blog-adress {
         display: flex;
         align-items: center;
         gap: 35px;
@@ -268,7 +268,7 @@
       font-size: 12px !important;
     }
 
-    .related-events {
+    .related-blogs {
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -288,25 +288,7 @@
         .details {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-
-          .type {
-            display: inline-flex;
-            height: 25px;
-            padding: 4px 8px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 3px;
-            background: #ECFDF3;
-            color: #00AB67;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
-            text-transform: capitalize;
-            width: fit-content;
-          }
+          justify-content: flex-start;
 
           .title {
             color: #222;
@@ -315,6 +297,16 @@
             font-weight: 500;
             line-height: 150%;
             text-transform: capitalize;
+            margin-bottom: 0;
+          }
+
+          .description {
+            color: #64748B;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            margin-bottom: 15px;
           }
 
           .time {
