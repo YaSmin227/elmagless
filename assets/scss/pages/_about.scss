@@ -1,4 +1,4 @@
-.about-section {
+.vision-section {
   padding-top: 35px;
   padding-bottom: 35px;
 
@@ -50,13 +50,138 @@
     }
 
     &::before {
-      left: -45px;
+      left: -15px;
+      top: 15px;
+    }
+
+    &::after {
+      right: -15px;
+      bottom: -15px;
+    }
+  }
+}
+
+
+.about-section {
+  height: 472.484px;
+  background: #F3FDF7;
+  margin-top: 90px;
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .title {
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 63.984px;
+  }
+
+  .description {
+    color: #64748B;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .image-container {
+    position: relative;
+
+    img {
+      height: 529px;
+      width: 100%;
+      margin-top: -30px;
+      object-fit: cover;
+      border-radius: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 153.176px;
+      height: 170.922px;
+      border-radius: 18.68px;
+      background: #00AB67;
+      z-index: 0;
+    }
+
+    &::before {
+      left: -15px;
       top: -45px;
     }
 
     &::after {
-      right: -45px;
-      bottom: -45px;
+      right: -15px;
+      bottom: -15px;
+    }
+  }
+}
+
+.mession-section {
+  margin: 90px 0;
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .description {
+    text-align: center;
+    color: #64748B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 570px;
+    margin: auto;
+  }
+
+  .mession-cards {
+    margin-top: 90px;
+
+    .single-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 78.018px;
+        height: 75.836px;
+        border-radius: 10px;
+        background: rgba(236, 253, 243, 0.61);
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        h6 {
+          color: #1A1A1A;
+          text-align: right;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          margin-bottom: 0;
+        }
+
+        p {
+          color: #64748B;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
