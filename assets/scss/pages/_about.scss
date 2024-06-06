@@ -1,0 +1,62 @@
+.about-section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .title {
+    color: #333;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 63.984px;
+  }
+
+  .description {
+    color: #c0c5d0;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .main-banner {
+    position: relative;
+    padding-top: 30px;
+
+    img {
+      width: 100%;
+      height: 462px;
+      border-radius: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 153.176px;
+      height: 170.922px;
+      border-radius: 18.68px;
+      background: #00AB67;
+      z-index: 0;
+    }
+
+    &::before {
+      left: -45px;
+      top: -45px;
+    }
+
+    &::after {
+      right: -45px;
+      bottom: -45px;
+    }
+  }
+}
