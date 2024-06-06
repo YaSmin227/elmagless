@@ -30,7 +30,24 @@ footer {
       }
     }
   }
-  .phone {
+  
+  .social {
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+  }
+  .copy-right {
+    color: $text-color;
+    border-top: 1px solid #e6e8ec;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+}
+
+// For Share
+.phone {
     padding: 20px;
     .phone-icon {
       background-color: #f3fdf7;
@@ -47,17 +64,3 @@ footer {
       padding-right: 20px;
     }
   }
-  .social {
-    img {
-      width: 40px;
-      height: 40px;
-      margin: 5px;
-    }
-  }
-  .copy-right {
-    color: $text-color;
-    border-top: 1px solid #e6e8ec;
-    margin-top: 30px;
-    font-weight: 500;
-  }
-}
