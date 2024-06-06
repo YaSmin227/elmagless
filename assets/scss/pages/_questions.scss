@@ -1,0 +1,99 @@
+.common-questions {
+  text-align: center;
+  .questions-body {
+    padding-top: 50px;
+    @media (min-width: 992px) {
+      width: 60%;
+      margin: auto;
+    }
+    .section-title {
+      justify-content: center;
+    }
+    p {
+      @extend .shared-p;
+      line-height: 23.6px;
+    }
+  }
+  .accordion-item {
+    margin-top: 30px;
+    border: 0px !important;
+
+    .accordion-button {
+    //   border: 1px solid #ccc;
+      background-color: #f3fdf7;
+      height: 63px;
+      border-radius: 8px;
+      font-weight: 700;
+      &::after {
+        margin-right: auto !important;
+        margin-left: 0px !important;
+      }
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: $main-color !important;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+    }
+  }
+  .accordion-button::after,
+  .accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  .accordion-button::after {
+    content: "+";
+    font-size: 38px;
+    top: 7px;
+    left: 20px;
+    color:$main-color;
+    font-weight: 400;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: none !important;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    content: "-";
+    color:#fff;
+    font-size: 50px;
+    top: 44px;
+    left: 20px;
+    font-family: 400;
+  }
+  .accordion-item:last-of-type {
+.accordion-button.collapsed{
+    border-radius: 8px !important;
+}
+  }
+  .accordion-button::after {
+    transition: all 0.5s;
+  }
+  .accordion-body{
+    text-align: right;
+  }
+  h4{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 29.4px;
+    color:$text-color;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .contact-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 45px;
+    width: 153px;
+    color: $main-color;
+    outline: none;
+    border: 1px solid $main-color;
+    // padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 12px;
+    background: #fff;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
