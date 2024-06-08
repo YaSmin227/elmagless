@@ -149,7 +149,7 @@
     }
   }
 
-  .invitations-details {
+  .invitations-details ,.notifications-details{
     .row {
       border-bottom: 1px solid #E5E5E5;
 
@@ -161,7 +161,7 @@
     }
   }
 
-  .invitation-img {
+  .invitation-img,.notification-img {
     img {
       width: 60px;
       height: 60px;
@@ -170,11 +170,11 @@
     }
   }
 
-  .invitation-info {
+  .invitation-info,.notification-info {
     padding-right: 15px;
 
     p {
-      color: $text-color;
+      color: #1A1A1A;
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
@@ -218,6 +218,25 @@
   }
 }
 
+// Notifications
+
+.notification-info {
+    p{
+        font-weight: 600 !important;
+    }
+    .date {
+      span {
+        padding-right: 0px !important;
+      }
+    }
+  }
+  .notifications-details{
+    .time{
+        font-size: 16px;
+        font-weight: 500;
+        color:#64748B
+    }
+  }
 // Data Table Style
 .dt-container {
   border-radius: 12px;
@@ -321,7 +340,10 @@
     }
   }
 
-  .table-pagination {
+  
+}
+// Pagination
+.table-pagination {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -382,7 +404,6 @@
       }
     }
   }
-}
 
 // profile setting 
 .personal-setting {
