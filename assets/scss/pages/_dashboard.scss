@@ -143,13 +143,15 @@
     line-height: 30px;
     font-weight: 500;
     color: $text-color;
+    margin-top: 15px;
 
     span {
       color: $main-color;
     }
   }
 
-  .invitations-details ,.notifications-details{
+  .invitations-details,
+  .notifications-details {
     .row {
       border-bottom: 1px solid #E5E5E5;
 
@@ -161,7 +163,8 @@
     }
   }
 
-  .invitation-img,.notification-img {
+  .invitation-img,
+  .notification-img {
     img {
       width: 60px;
       height: 60px;
@@ -170,7 +173,8 @@
     }
   }
 
-  .invitation-info,.notification-info {
+  .invitation-info,
+  .notification-info {
     padding-right: 15px;
 
     p {
@@ -221,22 +225,25 @@
 // Notifications
 
 .notification-info {
-    p{
-        font-weight: 600 !important;
-    }
-    .date {
-      span {
-        padding-right: 0px !important;
-      }
+  p {
+    font-weight: 600 !important;
+  }
+
+  .date {
+    span {
+      padding-right: 0px !important;
     }
   }
-  .notifications-details{
-    .time{
-        font-size: 16px;
-        font-weight: 500;
-        color:#64748B
-    }
+}
+
+.notifications-details {
+  .time {
+    font-size: 16px;
+    font-weight: 500;
+    color: #64748B
   }
+}
+
 // Data Table Style
 .dt-container {
   border-radius: 12px;
@@ -262,6 +269,8 @@
   border-radius: 12px;
   padding: 15px 0;
   border: 1px solid #E6E8EC;
+  overflow-x: auto;
+  overflow-y: hidden;
 
   .table-title {
     color: #1A1A1A;
@@ -285,6 +294,8 @@
       font-weight: 500;
       line-height: 160%;
       padding: 15px;
+      word-wrap: nowrap;
+      white-space: nowrap;
     }
 
     tr {
@@ -309,6 +320,8 @@
           font-style: normal;
           font-weight: 500;
           line-height: 160%;
+          word-wrap: nowrap;
+          white-space: nowrap;
         }
 
         .status {
@@ -340,70 +353,76 @@
     }
   }
 
-  
+
 }
+
 // Pagination
 .table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media(width<768px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .selction {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    gap: 16px;
 
-    .selction {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-
-      .title {
-        color: #0F172A;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-        letter-spacing: 0.2px;
-      }
-
-      .nice-select {
-        color: #77869A;
-      }
+    .title {
+      color: #0F172A;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.2px;
     }
 
-    .table-pages {
-      display: flex;
-      align-items: center;
-
-      .page {
-        display: flex;
-        width: 34px;
-        height: 48px;
-        padding: 22px 17px 12px 13px;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        color: #64748B;
-        font-size: 10px;
-        font-weight: 700;
-        text-decoration: none;
-
-        &.current {
-          color: #00AB67;
-        }
-      }
-
-      .prev,
-      .next {
-        background-color: #fff;
-        border: 1px solid #E6E8EC;
-        border-radius: 12px;
-        display: flex;
-        width: 48px;
-        height: 48px;
-        padding: 16px;
-        justify-content: center;
-        align-items: center;
-      }
+    .nice-select {
+      color: #77869A;
     }
   }
+
+  .table-pages {
+    display: flex;
+    align-items: center;
+
+    .page {
+      display: flex;
+      width: 34px;
+      height: 48px;
+      padding: 22px 17px 12px 13px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: #64748B;
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+
+      &.current {
+        color: #00AB67;
+      }
+    }
+
+    .prev,
+    .next {
+      background-color: #fff;
+      border: 1px solid #E6E8EC;
+      border-radius: 12px;
+      display: flex;
+      width: 48px;
+      height: 48px;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
 
 // profile setting 
 .personal-setting {
@@ -411,6 +430,7 @@
   border: 1px solid #E6E6E6;
   background: #FFF;
   margin-bottom: 51px;
+  margin-top: 5px;
 
   .title {
     color: #1A1A1A;
