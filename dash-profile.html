@@ -1,1332 +1,1516 @@
 <!DOCTYPE html>
 <html lang="ar" dir="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ElMagless</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="/assets/css/all.min.css" />
-    <!-- bootstrap 5 -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <!-- Nice Select -->
-    <link rel="stylesheet" href="/assets/css/nice-select.css" />
-    <!-- Data Table -->
-    <link rel="stylesheet" href="/assets/css/dataTable.min.css" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/app.css" />
-    <!-- Style LTR -->
-    <!-- <link rel="stylesheet" href="assets/css/app-ltr.css" /> -->
-  </head>
 
-  <body>
-    <!-- Start Top Header -->
-    <div class="top-nav">
-      <div class="container d-flex justify-content-between">
-        <div class="time d-flex align-items-center justify-content-between">
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 13 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6.5 0.594727C9.8084 0.594727 12.5 3.28633 12.5 6.59473C12.5 9.90313 9.8084 12.5947 6.5 12.5947C3.1916 12.5947 0.5 9.90313 0.5 6.59473C0.5 3.28633 3.1916 0.594727 6.5 0.594727ZM6.5 11.3947C9.1466 11.3947 11.3 9.24133 11.3 6.59473C11.3 3.94813 9.1466 1.79473 6.5 1.79473C3.8534 1.79473 1.7 3.94813 1.7 6.59473C1.7 9.24133 3.8534 11.3947 6.5 11.3947Z"
-              fill="white"
-            />
-            <path
-              d="M5.89961 3.59473H7.09961V6.84313L5.12381 8.81893L4.27541 7.97053L5.89961 6.34633V3.59473Z"
-              fill="white"
-            />
-          </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ElMagless</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="/assets/css/all.min.css" />
+  <!-- bootstrap 5 -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <!-- Nice Select -->
+  <link rel="stylesheet" href="/assets/css/nice-select.css" />
+  <!-- Data Table -->
+  <link rel="stylesheet" href="/assets/css/dataTable.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <!-- Style LTR -->
+  <!-- <link rel="stylesheet" href="assets/css/app-ltr.css" /> -->
+</head>
 
-          <span>7:40 AM</span>
-        </div>
-        <div
-          class="left-section d-flex justify-content-between align-items-center"
-        >
-          <div><span class="date">24 رجب 1445</span></div>
-          <div class="contact"><a href="">تواصل معنا</a></div>
-          <div><a href="">EN</a></div>
-        </div>
+<body>
+  <!-- Start Top Header -->
+  <div class="top-nav">
+    <div class="container d-flex justify-content-between">
+      <div class="time d-flex align-items-center justify-content-between">
+        <svg width="15" height="15" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.5 0.594727C9.8084 0.594727 12.5 3.28633 12.5 6.59473C12.5 9.90313 9.8084 12.5947 6.5 12.5947C3.1916 12.5947 0.5 9.90313 0.5 6.59473C0.5 3.28633 3.1916 0.594727 6.5 0.594727ZM6.5 11.3947C9.1466 11.3947 11.3 9.24133 11.3 6.59473C11.3 3.94813 9.1466 1.79473 6.5 1.79473C3.8534 1.79473 1.7 3.94813 1.7 6.59473C1.7 9.24133 3.8534 11.3947 6.5 11.3947Z"
+            fill="white" />
+          <path d="M5.89961 3.59473H7.09961V6.84313L5.12381 8.81893L4.27541 7.97053L5.89961 6.34633V3.59473Z"
+            fill="white" />
+        </svg>
+
+        <span>7:40 AM</span>
+      </div>
+      <div class="left-section d-flex justify-content-between align-items-center">
+        <div><span class="date">24 رجب 1445</span></div>
+        <div class="contact"><a href="">تواصل معنا</a></div>
+        <div><a href="">EN</a></div>
       </div>
     </div>
-    <!--Start Header -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-body-tertiary"
-      id="main-header"
-    >
-      <div class="container justify-content-between">
-        <!-- Left elements -->
-        <div class="d-flex align-items-center logo">
-          <!-- Logo -->
-          <a href="#">
-            <p>المجلس</p>
-          </a>
-        </div>
-        <button
-          class="navbar-toggler navbar_toggle"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <!-- Left elements -->
-        <!-- Center elements -->
-        <div
-          class="collapse navbar-collapse d-lg-flex justify-content-between"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav list-links">
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link home" href="home.html">
-                <svg
-                  width="17"
-                  height="17"
-                  viewBox="0 0 16 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.72663 13.0201V8.56022C5.72663 8.22269 5.72663 8.05392 5.79596 7.925C5.85696 7.81159 5.95428 7.71939 6.07398 7.66161C6.21006 7.59592 6.38821 7.59592 6.7445 7.59592H8.52577C8.88206 7.59592 9.0602 7.59592 9.19629 7.66161C9.31599 7.71939 9.41331 7.81159 9.4743 7.925C9.54364 8.05392 9.54364 8.22269 9.54364 8.56022V13.0201M1.27344 6.08921L7.02441 2.00299C7.24342 1.84738 7.35292 1.76957 7.47319 1.73958C7.57934 1.71311 7.69093 1.71311 7.79708 1.73958C7.91735 1.76957 8.02685 1.84738 8.24586 2.00299L13.9968 6.08921M2.54578 5.18518V11.0915C2.54578 11.7666 2.54578 12.1041 2.68446 12.362C2.80644 12.5888 3.00108 12.7732 3.24049 12.8887C3.51266 13.0201 3.86894 13.0201 4.58152 13.0201H10.6887C11.4013 13.0201 11.7576 13.0201 12.0298 12.8887C12.2692 12.7732 12.4638 12.5888 12.5858 12.362C12.7245 12.1041 12.7245 11.7666 12.7245 11.0915V5.18518L8.85658 2.43692C8.41857 2.1257 8.19956 1.97009 7.95903 1.91011C7.74672 1.85716 7.52355 1.85716 7.31124 1.91011C7.07071 1.97009 6.8517 2.1257 6.41369 2.43692L2.54578 5.18518Z"
-                    stroke="#150E06"
-                    stroke-width="1.3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                الصفحة الرئيسية
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1 active">
-              <a class="nav-link" href="events.html">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 11 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.47081 1.76588H8.87889V1.17396C8.87889 0.848398 8.61252 0.582031 8.28696 0.582031C7.9614 0.582031 7.69503 0.848398 7.69503 1.17396V1.76588H2.95963V1.17396C2.95963 0.848398 2.69326 0.582031 2.3677 0.582031C2.04214 0.582031 1.77578 0.848398 1.77578 1.17396V1.76588H1.18385C0.526814 1.76588 0.00591926 2.29862 0.00591926 2.94973L0 11.2367C0 11.8878 0.526814 12.4205 1.18385 12.4205H9.47081C10.1219 12.4205 10.6547 11.8878 10.6547 11.2367V2.94973C10.6547 2.29862 10.1219 1.76588 9.47081 1.76588ZM9.47055 10.6458C9.47055 10.9714 9.20419 11.2377 8.87863 11.2377H1.77552C1.44996 11.2377 1.18359 10.9714 1.18359 10.6458V4.72656H9.47055V10.6458ZM2.36719 5.91016H3.55104V7.09401H2.36719V5.91016ZM4.73438 5.91016H5.91823V7.09401H4.73438V5.91016ZM7.10156 5.91016H8.28541V7.09401H7.10156V5.91016Z"
-                    fill="150E06"
-                  />
-                </svg>
-                الفاعليات
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.17346 0.837891C3.49618 0.837891 0.511719 3.82235 0.511719 7.49963C0.511719 11.1769 3.49618 14.1614 7.17346 14.1614C10.8507 14.1614 13.8352 11.1769 13.8352 7.49963C13.8352 3.82235 10.8507 0.837891 7.17346 0.837891ZM6.50697 12.7838C3.87558 12.4574 1.84375 10.219 1.84375 7.50105C1.84375 7.08802 1.89704 6.69497 1.98365 6.30859L5.17462 9.49957V10.1657C5.17462 10.8985 5.77418 11.4981 6.50697 11.4981V12.7838ZM11.1029 11.0895C10.9297 10.5499 10.4368 10.1635 9.83721 10.1635H9.17103V8.16503C9.17103 7.79863 8.87125 7.49885 8.50486 7.49885H4.50781V6.1665H5.84016C6.20656 6.1665 6.50634 5.86672 6.50634 5.50033V4.16798H7.83868C8.57148 4.16798 9.17103 3.56842 9.17103 2.83563V2.5625C11.1229 3.35525 12.5019 5.26717 12.5019 7.49885C12.5019 8.88449 11.969 10.1436 11.1029 11.0895Z"
-                    fill="#150E06"
-                  />
-                </svg>
-                الأخبار
-              </a>
-            </li>
-
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#"> عن المجلس </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#"> تواصل معنا</a>
-            </li>
-          </ul>
-          <!-- Right elements -->
-          <ul
-            class="navbar-nav flex-row right-elements justify-content-center align-items-center"
-          >
-            <!-- social Media -->
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#">
-                <svg
-                  width="30"
-                  height="30"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.69629 17.7814L8.96997 18.2505C10.2015 20.3618 12.6647 20.3618 13.8963 18.2505L14.17 17.7814M6.08454 16.1048L6.15525 16.2505C6.60941 17.1868 7.55856 17.7814 8.59918 17.7814H14.2239C15.1157 17.7814 15.9456 17.3258 16.4244 16.5735C17.1003 15.5115 16.9213 14.1184 15.9989 13.2618L15.9689 13.2339C15.3426 12.6523 15.0343 11.8051 15.1403 10.957L15.1845 10.6033C15.4347 8.60184 13.8741 6.83398 11.857 6.83398H10.6918C8.67723 6.83398 7.1185 8.59969 7.36838 10.5987L7.42268 11.0331C7.52267 11.833 7.23048 12.6321 6.63803 13.1788C5.8288 13.9255 5.60397 15.114 6.08454 16.1048Z"
-                    stroke="black"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.8343 12.0835C12.3196 12.0835 14.3343 10.0688 14.3343 7.5835C14.3343 5.09821 12.3196 3.0835 9.8343 3.0835C7.34902 3.0835 5.3343 5.09821 5.3343 7.5835C5.3343 10.0688 7.34902 12.0835 9.8343 12.0835Z"
-                    stroke="black"
-                    stroke-miterlimit="10"
-                  />
-                  <path
-                    d="M3.01326 16.021C3.70438 14.8237 4.69853 13.8294 5.89575 13.1381C7.09298 12.4468 8.45109 12.0829 9.83357 12.0829C11.216 12.0829 12.5742 12.4468 13.7714 13.1381C14.9686 13.8294 15.9628 14.8237 16.6539 16.021"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item me-3 me-lg-1">
-              <a class="nav-link" href="#">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.59921 6.88092L3.64609 9.83405L6.59921 12.7872"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.5222 9.83325H3.64716"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.5211 16.0219H15.4586C15.6078 16.0219 15.7508 15.9626 15.8563 15.8572C15.9618 15.7517 16.0211 15.6086 16.0211 15.4594V4.20941C16.0211 4.06023 15.9618 3.91715 15.8563 3.81166C15.7508 3.70617 15.6078 3.64691 15.4586 3.64691H11.5211"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <!-- Right elements -->
-        </div>
-
-        <!-- Center elements -->
+  </div>
+  <!--Start Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary" id="main-header">
+    <div class="container justify-content-between">
+      <!-- Left elements -->
+      <div class="d-flex align-items-center logo">
+        <!-- Logo -->
+        <a href="#">
+          <p>المجلس</p>
+        </a>
       </div>
-    </nav>
-    <!-- End Header -->
+      <button class="navbar-toggler navbar_toggle" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <!-- Left elements -->
+      <!-- Center elements -->
+      <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav list-links">
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link home" href="home.html">
+              <svg width="17" height="17" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.72663 13.0201V8.56022C5.72663 8.22269 5.72663 8.05392 5.79596 7.925C5.85696 7.81159 5.95428 7.71939 6.07398 7.66161C6.21006 7.59592 6.38821 7.59592 6.7445 7.59592H8.52577C8.88206 7.59592 9.0602 7.59592 9.19629 7.66161C9.31599 7.71939 9.41331 7.81159 9.4743 7.925C9.54364 8.05392 9.54364 8.22269 9.54364 8.56022V13.0201M1.27344 6.08921L7.02441 2.00299C7.24342 1.84738 7.35292 1.76957 7.47319 1.73958C7.57934 1.71311 7.69093 1.71311 7.79708 1.73958C7.91735 1.76957 8.02685 1.84738 8.24586 2.00299L13.9968 6.08921M2.54578 5.18518V11.0915C2.54578 11.7666 2.54578 12.1041 2.68446 12.362C2.80644 12.5888 3.00108 12.7732 3.24049 12.8887C3.51266 13.0201 3.86894 13.0201 4.58152 13.0201H10.6887C11.4013 13.0201 11.7576 13.0201 12.0298 12.8887C12.2692 12.7732 12.4638 12.5888 12.5858 12.362C12.7245 12.1041 12.7245 11.7666 12.7245 11.0915V5.18518L8.85658 2.43692C8.41857 2.1257 8.19956 1.97009 7.95903 1.91011C7.74672 1.85716 7.52355 1.85716 7.31124 1.91011C7.07071 1.97009 6.8517 2.1257 6.41369 2.43692L2.54578 5.18518Z"
+                  stroke="#150E06" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
 
-    <main class="app" style="min-height: 400px; background-color: #fff">
-      <!-- Banner -->
-      <div class="banner">
-        <h3>مرحبا بك فى المجلس</h3>
-      </div>
-      <!-- **************************** -->
-      <!-- Dashboard Taps -->
-      <section class="py-5">
-        <div class="container">
-          <div class="row d-flex align-items-start">
-            <div class="col-lg-3">
-              <div class="tab-items">
-                <p>لوحة التحكم</p>
-                <ul
-                  class="nav nav-pills flex-column"
-                  id="pills-tab"
-                  role="tablist"
-                >
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link d-flex justify-content-start active position-relative"
-                      id="pills-profile-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-profile"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-profile"
-                      aria-selected="true"
-                    >
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.9985 14.9995C15.3122 14.9995 17.9985 12.3132 17.9985 8.99951C17.9985 5.6858 15.3122 2.99951 11.9985 2.99951C8.68483 2.99951 5.99854 5.6858 5.99854 8.99951C5.99854 12.3132 8.68483 14.9995 11.9985 14.9995Z"
-                          stroke="black"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                        />
-                        <path
-                          d="M2.90723 20.2494C3.82873 18.6529 5.15426 17.3272 6.75056 16.4055C8.34686 15.4838 10.1577 14.9985 12.001 14.9985C13.8443 14.9985 15.6551 15.4838 17.2514 16.4055C18.8477 17.3272 20.1732 18.6529 21.0947 20.2494"
-                          stroke="black"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      <span>الصفحة الشخصية</span>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link d-flex justify-content-start position-relative"
-                      id="pills-invitations-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-invitations"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-invitations"
-                      aria-selected="false"
-                    >
-                      <svg
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16.5 22.75H8.5C2.75 22.75 2.75 19.7 2.75 17V16C2.75 13.77 2.75 11.25 7.5 11.25C8.69 11.25 9.13 11.54 9.75 12C9.78 12.03 9.82 12.05 9.85 12.09L10.87 13.17C11.73 14.08 13.29 14.08 14.15 13.17L15.17 12.09C15.2 12.06 15.23 12.03 15.27 12C15.89 11.53 16.33 11.25 17.52 11.25C22.27 11.25 22.27 13.77 22.27 16V17C22.25 20.82 20.32 22.75 16.5 22.75ZM7.5 12.75C4.25 12.75 4.25 13.77 4.25 16V17C4.25 19.74 4.25 21.25 8.5 21.25H16.5C19.48 21.25 20.75 19.98 20.75 17V16C20.75 13.77 20.75 12.75 17.5 12.75C16.78 12.75 16.63 12.84 16.2 13.16L15.23 14.19C14.51 14.95 13.54 15.37 12.5 15.37C11.46 15.37 10.49 14.95 9.77 14.19L8.8 13.16C8.37 12.84 8.22 12.75 7.5 12.75Z"
-                          fill="black"
-                        />
-                        <path
-                          d="M19.5 12.75C19.09 12.75 18.75 12.41 18.75 12V6C18.75 3.77 18.75 2.75 15.5 2.75H9.5C6.25 2.75 6.25 3.77 6.25 6V12C6.25 12.41 5.91 12.75 5.5 12.75C5.09 12.75 4.75 12.41 4.75 12V6C4.75 3.77 4.75 1.25 9.5 1.25H15.5C20.25 1.25 20.25 3.77 20.25 6V12C20.25 12.41 19.91 12.75 19.5 12.75Z"
-                          fill="black"
-                        />
-                        <path
-                          d="M14.3808 9.98047H11.0508C10.6408 9.98047 10.3008 9.64047 10.3008 9.23047C10.3008 8.82047 10.6408 8.48047 11.0508 8.48047H14.3808C14.7908 8.48047 15.1308 8.82047 15.1308 9.23047C15.1308 9.64047 14.8008 9.98047 14.3808 9.98047Z"
-                          fill="black"
-                        />
-                        <path
-                          d="M15.2207 6.98047H10.2207C9.8107 6.98047 9.4707 6.64047 9.4707 6.23047C9.4707 5.82047 9.8107 5.48047 10.2207 5.48047H15.2207C15.6307 5.48047 15.9707 5.82047 15.9707 6.23047C15.9707 6.64047 15.6407 6.98047 15.2207 6.98047Z"
-                          fill="black"
-                        />
-                      </svg>
-                      <span>الدعوات</span>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link d-flex justify-content-start position-relative"
-                      id="pills-setting-tab"
-                      data-bs-toggle="pill"
-                      data-bs-target="#pills-setting"
-                      type="button"
-                      role="tab"
-                      aria-controls="pills-setting"
-                      aria-selected="false"
-                    >
-                      <svg
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z"
-                          stroke="black"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M2.5 12.8799V11.1199C2.5 10.0799 3.35 9.21994 4.4 9.21994C6.21 9.21994 6.95 7.93994 6.04 6.36994C5.52 5.46994 5.83 4.29994 6.74 3.77994L8.47 2.78994C9.26 2.31994 10.28 2.59994 10.75 3.38994L10.86 3.57994C11.76 5.14994 13.24 5.14994 14.15 3.57994L14.26 3.38994C14.73 2.59994 15.75 2.31994 16.54 2.78994L18.27 3.77994C19.18 4.29994 19.49 5.46994 18.97 6.36994C18.06 7.93994 18.8 9.21994 20.61 9.21994C21.65 9.21994 22.51 10.0699 22.51 11.1199V12.8799C22.51 13.9199 21.66 14.7799 20.61 14.7799C18.8 14.7799 18.06 16.0599 18.97 17.6299C19.49 18.5399 19.18 19.6999 18.27 20.2199L16.54 21.2099C15.75 21.6799 14.73 21.3999 14.26 20.6099L14.15 20.4199C13.25 18.8499 11.77 18.8499 10.86 20.4199L10.75 20.6099C10.28 21.3999 9.26 21.6799 8.47 21.2099L6.74 20.2199C5.83 19.6999 5.52 18.5299 6.04 17.6299C6.95 16.0599 6.21 14.7799 4.4 14.7799C3.35 14.7799 2.5 13.9199 2.5 12.8799Z"
-                          stroke="black"
-                          stroke-width="1.5"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-
-                      <span>الاعدادت</span>
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="nav-link d-flex justify-content-start position-relative"
-                      id=""
-                      data-bs-toggle="pill"
-                      data-bs-target=""
-                      type="button"
-                      role="tab"
-                      aria-controls=""
-                      aria-selected="false"
-                    >
-                      <svg
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16.8135 8.0625L20.751 12L16.8135 15.9375"
-                          stroke="#150E06"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M10.248 11.998H20.748"
-                          stroke="#150E06"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M10.249 20.251H4.99902C4.80011 20.251 4.60935 20.172 4.46869 20.0313C4.32804 19.8907 4.24902 19.6999 4.24902 19.501V4.50098C4.24902 4.30206 4.32804 4.1113 4.46869 3.97065C4.60935 3.82999 4.80011 3.75098 4.99902 3.75098H10.249"
-                          stroke="#150E06"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-
-                      <span>تسجيل خروج</span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="tab-content w-100" id="pills-tabContent">
-                <!-- ***************************PROFILE***************************** -->
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="pills-profile-tab"
-                >
-                  <div class="profile-content mb-5">
-                    <div class="row">
-                      <div class="col-lg-6 d-flex justify-content-center">
-                        <div class="member-img">
-                          <img src="./assets/imgs/profile.jpg" alt="" />
-                          <p class="member-name">نواف بن عبدالعزيز</p>
-                          <div class="member-type">عضو مميز</div>
-                          <a href="#">تعديل</a>
-                        </div>
-                      </div>
-                      <div class="col-lg-6 d-flex">
-                        <div class="line"></div>
-                        <div class="personal-info">
-                          <div class="info">البيانات الشخصية</div>
-                          <div class="d-flex data">
-                            <div class="d-flex">
-                              <svg
-                                width="17"
-                                height="17"
-                                viewBox="0 0 17 17"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M12.7497 3.5415H4.24967C3.46727 3.5415 2.83301 4.17577 2.83301 4.95817V13.4582C2.83301 14.2406 3.46727 14.8748 4.24967 14.8748H12.7497C13.5321 14.8748 14.1663 14.2406 14.1663 13.4582V4.95817C14.1663 4.17577 13.5321 3.5415 12.7497 3.5415Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M11.333 2.125V4.95833"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M5.6665 2.125V4.95833"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M2.83301 7.7915H14.1663"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M7.7915 10.625H8.49984"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M8.49976 10.625V12.75"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                              <span>تاريخ الاشتراك :</span>
-                            </div>
-                            <div class="data-info">01/01/2024</div>
-                          </div>
-                          <!-- ********* -->
-                          <div class="d-flex data">
-                            <div class="d-flex">
-                              <svg
-                                width="15"
-                                height="14"
-                                viewBox="0 0 15 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M13.1491 10.5455C13.1491 10.7472 13.1043 10.9545 13.0091 11.1562C12.9138 11.3578 12.7906 11.5483 12.6281 11.7276C12.3536 12.0301 12.0511 12.2486 11.7094 12.3886C11.3733 12.5287 11.0092 12.6015 10.617 12.6015C10.0456 12.6015 9.435 12.467 8.79076 12.1925C8.14653 11.918 7.5023 11.5483 6.86367 11.0833C6.21944 10.6128 5.60882 10.0918 5.02621 9.51477C4.44921 8.93216 3.92822 8.32155 3.46325 7.68292C3.00389 7.04429 2.63416 6.40566 2.36526 5.77263C2.09636 5.134 1.96191 4.52338 1.96191 3.94077C1.96191 3.55984 2.02914 3.19571 2.16359 2.85959C2.29803 2.51786 2.51091 2.20415 2.80782 1.92405C3.16635 1.57112 3.55849 1.39746 3.97304 1.39746C4.12989 1.39746 4.28675 1.43107 4.4268 1.4983C4.57245 1.56552 4.7013 1.66636 4.80213 1.81201L6.1018 3.64387C6.20264 3.78392 6.27546 3.91276 6.32588 4.03601C6.3763 4.15365 6.40431 4.27129 6.40431 4.37773C6.40431 4.51218 6.36509 4.64663 6.28667 4.77547C6.21384 4.90432 6.1074 5.03877 5.97295 5.17322L5.5472 5.61577C5.48558 5.6774 5.45757 5.75022 5.45757 5.83986C5.45757 5.88467 5.46317 5.92389 5.47437 5.9687C5.49118 6.01352 5.50799 6.04713 5.51919 6.08074C5.62003 6.26561 5.79369 6.50649 6.04018 6.7978C6.29227 7.0891 6.56116 7.38601 6.85247 7.68292C7.15498 7.97982 7.44628 8.25432 7.74319 8.50641C8.03449 8.7529 8.27538 8.92096 8.46585 9.0218C8.49386 9.033 8.52747 9.04981 8.56668 9.06661C8.6115 9.08342 8.65632 9.08902 8.70673 9.08902C8.80197 9.08902 8.87479 9.05541 8.93642 8.99379L9.36217 8.57364C9.50222 8.43359 9.63667 8.32715 9.76551 8.25992C9.89436 8.1815 10.0232 8.14228 10.1633 8.14228C10.2697 8.14228 10.3817 8.16469 10.505 8.21511C10.6282 8.26553 10.7571 8.33835 10.8971 8.43359L12.7514 9.75006C12.897 9.85089 12.9979 9.96854 13.0595 10.1086C13.1155 10.2486 13.1491 10.3887 13.1491 10.5455Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-miterlimit="10"
-                                />
-                              </svg>
-
-                              <span>رقم الجوال :</span>
-                            </div>
-                            <div class="data-info">+965564165145</div>
-                          </div>
-                          <!-- ********* -->
-                          <div class="d-flex data">
-                            <div class="d-flex">
-                              <svg
-                                width="17"
-                                height="16"
-                                viewBox="0 0 17 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11.7529 13.6787H5.25879C2.66113 13.6787 2.01172 13.0293 2.01172 10.4316V5.23633C2.01172 2.63867 2.66113 1.98926 5.25879 1.98926H11.7529C14.3506 1.98926 15 2.63867 15 5.23633V10.4316C15 13.0293 14.3506 13.6787 11.7529 13.6787Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M9.80469 5.23633H13.0518"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M10.4531 7.83398H13.0508"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M11.7539 10.4316H13.0527"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M6.23208 7.37285C6.88126 7.37285 7.40752 6.84659 7.40752 6.19741C7.40752 5.54823 6.88126 5.02197 6.23208 5.02197C5.5829 5.02197 5.05664 5.54823 5.05664 6.19741C5.05664 6.84659 5.5829 7.37285 6.23208 7.37285Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M8.50684 10.6457C8.41592 9.70409 7.66909 8.96376 6.72744 8.87933C6.40273 8.84686 6.07153 8.84686 5.74033 8.87933C4.79868 8.97025 4.05186 9.70409 3.96094 10.6457"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-
-                              <span>رقم الهوية :</span>
-                            </div>
-                            <div class="data-info">1256515</div>
-                          </div>
-                          <!-- ********* -->
-                          <div class="d-flex data">
-                            <div class="d-flex">
-                              <svg
-                                width="14"
-                                height="12"
-                                viewBox="0 0 14 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M0.578125 3.15234L5.6812 6.7245C6.09443 7.01376 6.30105 7.15839 6.52579 7.21441C6.72431 7.2639 6.93194 7.2639 7.13046 7.21441C7.3552 7.15839 7.56182 7.01376 7.97505 6.7245L13.0781 3.15234M3.57813 11.2773H10.0781C11.1282 11.2773 11.6533 11.2773 12.0544 11.073C12.4072 10.8932 12.694 10.6064 12.8738 10.2536C13.0781 9.85249 13.0781 9.32744 13.0781 8.27734V4.27734C13.0781 3.22725 13.0781 2.7022 12.8738 2.30111C12.694 1.94831 12.4072 1.66147 12.0544 1.48171C11.6533 1.27734 11.1282 1.27734 10.0781 1.27734H3.57813C2.52803 1.27734 2.00298 1.27734 1.60189 1.48171C1.24909 1.66147 0.96225 1.94831 0.782488 2.30111C0.578125 2.7022 0.578125 3.22725 0.578125 4.27734V8.27734C0.578125 9.32744 0.578125 9.85249 0.782488 10.2536C0.96225 10.6064 1.24909 10.8932 1.60189 11.073C2.00298 11.2773 2.52803 11.2773 3.57813 11.2773Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                              <span>البريد الالكتروني :</span>
-                            </div>
-                            <div class="data-info">Nawoafben@gmail.com</div>
-                          </div>
-                          <!-- ********* -->
-                          <div class="d-flex data">
-                            <div class="d-flex">
-                              <svg
-                                width="12"
-                                height="14"
-                                viewBox="0 0 12 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.84097 5.79278C7.22594 5.79278 8.34869 4.67004 8.34869 3.28506C8.34869 1.90009 7.22594 0.777344 5.84097 0.777344C4.456 0.777344 3.33325 1.90009 3.33325 3.28506C3.33325 4.67004 4.456 5.79278 5.84097 5.79278Z"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                                <path
-                                  d="M10.6984 12.777C10.5044 10.7681 8.91109 9.18861 6.90214 9.0085C6.2094 8.93922 5.50281 8.93922 4.79621 9.0085C2.78727 9.20247 1.19397 10.7681 1 12.777"
-                                  stroke="black"
-                                  stroke-width="0.9"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
-                              <span>الجنسية :</span>
-                            </div>
-                            <div class="data-info d-flex">
-                              سعودي
-                              <img
-                                src="./assets/imgs/Flag-Saudi-Arabia.webp"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--************************ Data Table****************** -->
-                  <table id="example" class="display mt-5" style="width: 100%">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011-04-25</td>
-                        <td>$320,800</td>
-                      </tr>
-                      <tr>
-                        <td>Garrett Winters</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>63</td>
-                        <td>2011-07-25</td>
-                        <td>$170,750</td>
-                      </tr>
-                      <tr>
-                        <td>Ashton Cox</td>
-                        <td>Junior Technical Author</td>
-                        <td>San Francisco</td>
-                        <td>66</td>
-                        <td>2009-01-12</td>
-                        <td>$86,000</td>
-                      </tr>
-                      <tr>
-                        <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
-                        <td>2012-03-29</td>
-                        <td>$433,060</td>
-                      </tr>
-                      <tr>
-                        <td>Airi Satou</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>33</td>
-                        <td>2008-11-28</td>
-                        <td>$162,700</td>
-                      </tr>
-                      <tr>
-                        <td>Brielle Williamson</td>
-                        <td>Integration Specialist</td>
-                        <td>New York</td>
-                        <td>61</td>
-                        <td>2012-12-02</td>
-                        <td>$372,000</td>
-                      </tr>
-                      <tr>
-                        <td>Herrod Chandler</td>
-                        <td>Sales Assistant</td>
-                        <td>San Francisco</td>
-                        <td>59</td>
-                        <td>2012-08-06</td>
-                        <td>$137,500</td>
-                      </tr>
-                      <tr>
-                        <td>Rhona Davidson</td>
-                        <td>Integration Specialist</td>
-                        <td>Tokyo</td>
-                        <td>55</td>
-                        <td>2010-10-14</td>
-                        <td>$327,900</td>
-                      </tr>
-                      <tr>
-                        <td>Colleen Hurst</td>
-                        <td>Javascript Developer</td>
-                        <td>San Francisco</td>
-                        <td>39</td>
-                        <td>2009-09-15</td>
-                        <td>$205,500</td>
-                      </tr>
-                      <tr>
-                        <td>Sonya Frost</td>
-                        <td>Software Engineer</td>
-                        <td>Edinburgh</td>
-                        <td>23</td>
-                        <td>2008-12-13</td>
-                        <td>$103,600</td>
-                      </tr>
-                      <tr>
-                        <td>Jena Gaines</td>
-                        <td>Office Manager</td>
-                        <td>London</td>
-                        <td>30</td>
-                        <td>2008-12-19</td>
-                        <td>$90,560</td>
-                      </tr>
-                      <tr>
-                        <td>Quinn Flynn</td>
-                        <td>Support Lead</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
-                        <td>2013-03-03</td>
-                        <td>$342,000</td>
-                      </tr>
-                      <tr>
-                        <td>Charde Marshall</td>
-                        <td>Regional Director</td>
-                        <td>San Francisco</td>
-                        <td>36</td>
-                        <td>2008-10-16</td>
-                        <td>$470,600</td>
-                      </tr>
-                      <tr>
-                        <td>Haley Kennedy</td>
-                        <td>Senior Marketing Designer</td>
-                        <td>London</td>
-                        <td>43</td>
-                        <td>2012-12-18</td>
-                        <td>$313,500</td>
-                      </tr>
-                      <tr>
-                        <td>Tatyana Fitzpatrick</td>
-                        <td>Regional Director</td>
-                        <td>London</td>
-                        <td>19</td>
-                        <td>2010-03-17</td>
-                        <td>$385,750</td>
-                      </tr>
-                      <tr>
-                        <td>Michael Silva</td>
-                        <td>Marketing Designer</td>
-                        <td>London</td>
-                        <td>66</td>
-                        <td>2012-11-27</td>
-                        <td>$198,500</td>
-                      </tr>
-                      <tr>
-                        <td>Paul Byrd</td>
-                        <td>Chief Financial Officer (CFO)</td>
-                        <td>New York</td>
-                        <td>64</td>
-                        <td>2010-06-09</td>
-                        <td>$725,000</td>
-                      </tr>
-                      <tr>
-                        <td>Gloria Little</td>
-                        <td>Systems Administrator</td>
-                        <td>New York</td>
-                        <td>59</td>
-                        <td>2009-04-10</td>
-                        <td>$237,500</td>
-                      </tr>
-                      <tr>
-                        <td>Bradley Greer</td>
-                        <td>Software Engineer</td>
-                        <td>London</td>
-                        <td>41</td>
-                        <td>2012-10-13</td>
-                        <td>$132,000</td>
-                      </tr>
-                      <tr>
-                        <td>Dai Rios</td>
-                        <td>Personnel Lead</td>
-                        <td>Edinburgh</td>
-                        <td>35</td>
-                        <td>2012-09-26</td>
-                        <td>$217,500</td>
-                      </tr>
-                      <tr>
-                        <td>Jenette Caldwell</td>
-                        <td>Development Lead</td>
-                        <td>New York</td>
-                        <td>30</td>
-                        <td>2011-09-03</td>
-                        <td>$345,000</td>
-                      </tr>
-                      <tr>
-                        <td>Yuri Berry</td>
-                        <td>Chief Marketing Officer (CMO)</td>
-                        <td>New York</td>
-                        <td>40</td>
-                        <td>2009-06-25</td>
-                        <td>$675,000</td>
-                      </tr>
-                      <tr>
-                        <td>Caesar Vance</td>
-                        <td>Pre-Sales Support</td>
-                        <td>New York</td>
-                        <td>21</td>
-                        <td>2011-12-12</td>
-                        <td>$106,450</td>
-                      </tr>
-                      <tr>
-                        <td>Doris Wilder</td>
-                        <td>Sales Assistant</td>
-                        <td>Sydney</td>
-                        <td>23</td>
-                        <td>2010-09-20</td>
-                        <td>$85,600</td>
-                      </tr>
-                      <tr>
-                        <td>Angelica Ramos</td>
-                        <td>Chief Executive Officer (CEO)</td>
-                        <td>London</td>
-                        <td>47</td>
-                        <td>2009-10-09</td>
-                        <td>$1,200,000</td>
-                      </tr>
-                      <tr>
-                        <td>Gavin Joyce</td>
-                        <td>Developer</td>
-                        <td>Edinburgh</td>
-                        <td>42</td>
-                        <td>2010-12-22</td>
-                        <td>$92,575</td>
-                      </tr>
-                      <tr>
-                        <td>Jennifer Chang</td>
-                        <td>Regional Director</td>
-                        <td>Singapore</td>
-                        <td>28</td>
-                        <td>2010-11-14</td>
-                        <td>$357,650</td>
-                      </tr>
-                      <tr>
-                        <td>Brenden Wagner</td>
-                        <td>Software Engineer</td>
-                        <td>San Francisco</td>
-                        <td>28</td>
-                        <td>2011-06-07</td>
-                        <td>$206,850</td>
-                      </tr>
-                      <tr>
-                        <td>Fiona Green</td>
-                        <td>Chief Operating Officer (COO)</td>
-                        <td>San Francisco</td>
-                        <td>48</td>
-                        <td>2010-03-11</td>
-                        <td>$850,000</td>
-                      </tr>
-                      <tr>
-                        <td>Shou Itou</td>
-                        <td>Regional Marketing</td>
-                        <td>Tokyo</td>
-                        <td>20</td>
-                        <td>2011-08-14</td>
-                        <td>$163,000</td>
-                      </tr>
-                      <tr>
-                        <td>Michelle House</td>
-                        <td>Integration Specialist</td>
-                        <td>Sydney</td>
-                        <td>37</td>
-                        <td>2011-06-02</td>
-                        <td>$95,400</td>
-                      </tr>
-                      <tr>
-                        <td>Suki Burks</td>
-                        <td>Developer</td>
-                        <td>London</td>
-                        <td>53</td>
-                        <td>2009-10-22</td>
-                        <td>$114,500</td>
-                      </tr>
-
-                      <tr>
-                        <td>Bruno Nash</td>
-                        <td>Software Engineer</td>
-                        <td>London</td>
-                        <td>38</td>
-                        <td>2011-05-03</td>
-                        <td>$163,500</td>
-                      </tr>
-                      <tr>
-                        <td>Sakura Yamamoto</td>
-                        <td>Support Engineer</td>
-                        <td>Tokyo</td>
-                        <td>37</td>
-                        <td>2009-08-19</td>
-                        <td>$139,575</td>
-                      </tr>
-                      <tr>
-                        <td>Thor Walton</td>
-                        <td>Developer</td>
-                        <td>New York</td>
-                        <td>61</td>
-                        <td>2013-08-11</td>
-                        <td>$98,540</td>
-                      </tr>
-                      <tr>
-                        <td>Finn Camacho</td>
-                        <td>Support Engineer</td>
-                        <td>San Francisco</td>
-                        <td>47</td>
-                        <td>2009-07-07</td>
-                        <td>$87,500</td>
-                      </tr>
-                      <tr>
-                        <td>Serge Baldwin</td>
-                        <td>Data Coordinator</td>
-                        <td>Singapore</td>
-                        <td>64</td>
-                        <td>2012-04-09</td>
-                        <td>$138,575</td>
-                      </tr>
-                      <tr>
-                        <td>Zenaida Frank</td>
-                        <td>Software Engineer</td>
-                        <td>New York</td>
-                        <td>63</td>
-                        <td>2010-01-04</td>
-                        <td>$125,250</td>
-                      </tr>
-                      <tr>
-                        <td>Zorita Serrano</td>
-                        <td>Software Engineer</td>
-                        <td>San Francisco</td>
-                        <td>56</td>
-                        <td>2012-06-01</td>
-                        <td>$115,000</td>
-                      </tr>
-                      <tr>
-                        <td>Jennifer Acosta</td>
-                        <td>Junior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>43</td>
-                        <td>2013-02-01</td>
-                        <td>$75,650</td>
-                      </tr>
-                      <tr>
-                        <td>Cara Stevens</td>
-                        <td>Sales Assistant</td>
-                        <td>New York</td>
-                        <td>46</td>
-                        <td>2011-12-06</td>
-                        <td>$145,600</td>
-                      </tr>
-                      <tr>
-                        <td>Hermione Butler</td>
-                        <td>Regional Director</td>
-                        <td>London</td>
-                        <td>47</td>
-                        <td>2011-03-21</td>
-                        <td>$356,250</td>
-                      </tr>
-                      <tr>
-                        <td>Lael Greer</td>
-                        <td>Systems Administrator</td>
-                        <td>London</td>
-                        <td>21</td>
-                        <td>2009-02-27</td>
-                        <td>$103,500</td>
-                      </tr>
-                      <tr>
-                        <td>Jonas Alexander</td>
-                        <td>Developer</td>
-                        <td>San Francisco</td>
-                        <td>30</td>
-                        <td>2010-07-14</td>
-                        <td>$86,500</td>
-                      </tr>
-                      <tr>
-                        <td>Shad Decker</td>
-                        <td>Regional Director</td>
-                        <td>Edinburgh</td>
-                        <td>51</td>
-                        <td>2008-11-13</td>
-                        <td>$183,000</td>
-                      </tr>
-                      <tr>
-                        <td>Michael Bruce</td>
-                        <td>Javascript Developer</td>
-                        <td>Singapore</td>
-                        <td>29</td>
-                        <td>2011-06-27</td>
-                        <td>$183,000</td>
-                      </tr>
-                      <tr>
-                        <td>Donna Snider</td>
-                        <td>Customer Support</td>
-                        <td>New York</td>
-                        <td>27</td>
-                        <td>2011-01-25</td>
-                        <td>$112,000</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <!-- ***************************INVITATION**************************** -->
-                <div
-                  class="tab-pane fade"
-                  id="pills-invitations"
-                  role="tabpanel"
-                  aria-labelledby="pills-invitations-tab"
-                >
-                  <div class="invitation-number">
-                    اجمالي الدعوات : <span>3</span>
-                  </div>
-                  <div class="invitations-details mt-5 mx-xl-3">
-                    <div
-                      class="row d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="col-md-6 d-flex justify-content-start align-items-center"
-                      >
-                        <div class="invitation-img">
-                          <img src="./assets/imgs/invitation.jpg" alt="" />
-                        </div>
-                        <div class="invitation-info">
-                          <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
-                          <div class="date">
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 13 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
-                                fill="#64748B"
-                              ></path>
-                              <path
-                                d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
-                                fill="#64748B"
-                              ></path>
-                            </svg>
-                            <span>05/02/2024</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 d-flex justify-content-md-end">
-                        <button class="accept">قبول</button>
-                        <button class="reject">رفض</button>
-                        <button class="show-invitation">عرض الدعوة</button>
-                      </div>
-                    </div>
-                    <!-- ******************* -->
-                    <div
-                      class="row d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="col-md-6 d-flex justify-content-start align-items-center"
-                      >
-                        <div class="invitation-img">
-                          <img src="./assets/imgs/invitation.jpg" alt="" />
-                        </div>
-                        <div class="invitation-info">
-                          <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
-                          <div class="date">
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 13 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
-                                fill="#64748B"
-                              ></path>
-                              <path
-                                d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
-                                fill="#64748B"
-                              ></path>
-                            </svg>
-                            <span>05/02/2024</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 d-flex justify-content-md-end">
-                        <button class="accept">قبول</button>
-                        <button class="reject">رفض</button>
-                        <button class="show-invitation">عرض الدعوة</button>
-                      </div>
-                    </div>
-                    <!-- ******************* -->
-                    <div
-                      class="row d-flex justify-content-between align-items-center"
-                    >
-                      <div
-                        class="col-md-6 d-flex justify-content-start align-items-center"
-                      >
-                        <div class="invitation-img">
-                          <img src="./assets/imgs/invitation.jpg" alt="" />
-                        </div>
-                        <div class="invitation-info">
-                          <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
-                          <div class="date">
-                            <svg
-                              width="14"
-                              height="14"
-                              viewBox="0 0 13 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
-                                fill="#64748B"
-                              ></path>
-                              <path
-                                d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
-                                fill="#64748B"
-                              ></path>
-                            </svg>
-                            <span>05/02/2024</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 d-flex justify-content-md-end">
-                        <button class="accept">قبول</button>
-                        <button class="reject">رفض</button>
-                        <button class="show-invitation">عرض الدعوة</button>
-                      </div>
-                    </div>
-                    <!-- ******************* -->
-                  </div>
-                </div>
-                <!-- ***************************SETTING**************************** -->
-                <div
-                  class="tab-pane fade"
-                  id="pills-setting"
-                  role="tabpanel"
-                  aria-labelledby="pills-setting-tab"
-                >
-                  <h2>setting</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- **************************** -->
-      <!-- Email section-->
-      <section class="send-email mt-5">
-        <div class="container">
-          <h2>اكتب بريدك الإلكتروني للحصول على الأخبار والفاعليات أسبوعيا</h2>
-          <div class="d-flex justify-content-center mb-4">
-            <input type="email" name="" id="" placeholder="بريدك الأكتروني" />
-            <button>ارسال</button>
-          </div>
-          <p>
-            جميع الفاعليات ونشرات الأخبار الأسبوعية ستصلك على بريدك الألكتروني
-          </p>
-        </div>
-      </section>
-      <!-- **************************** -->
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <h2>المجلس</h2>
-        <ul class="d-flex justify-content-center flex-wrap">
-          <li><a href=""> الصفحة الرئيسية </a></li>
-          <li>
-            <a href=""> الفاعليات </a>
+              الصفحة الرئيسية
+            </a>
           </li>
-          <li>
-            <a href=""> الأخبار </a>
+          <li class="nav-item me-3 me-lg-1 active">
+            <a class="nav-link" href="events.html">
+              <svg width="16" height="16" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.47081 1.76588H8.87889V1.17396C8.87889 0.848398 8.61252 0.582031 8.28696 0.582031C7.9614 0.582031 7.69503 0.848398 7.69503 1.17396V1.76588H2.95963V1.17396C2.95963 0.848398 2.69326 0.582031 2.3677 0.582031C2.04214 0.582031 1.77578 0.848398 1.77578 1.17396V1.76588H1.18385C0.526814 1.76588 0.00591926 2.29862 0.00591926 2.94973L0 11.2367C0 11.8878 0.526814 12.4205 1.18385 12.4205H9.47081C10.1219 12.4205 10.6547 11.8878 10.6547 11.2367V2.94973C10.6547 2.29862 10.1219 1.76588 9.47081 1.76588ZM9.47055 10.6458C9.47055 10.9714 9.20419 11.2377 8.87863 11.2377H1.77552C1.44996 11.2377 1.18359 10.9714 1.18359 10.6458V4.72656H9.47055V10.6458ZM2.36719 5.91016H3.55104V7.09401H2.36719V5.91016ZM4.73438 5.91016H5.91823V7.09401H4.73438V5.91016ZM7.10156 5.91016H8.28541V7.09401H7.10156V5.91016Z"
+                  fill="150E06" />
+              </svg>
+              الفاعليات
+            </a>
           </li>
-          <li>
-            <a href=""> عن المجلس </a>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <svg width="16" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.17346 0.837891C3.49618 0.837891 0.511719 3.82235 0.511719 7.49963C0.511719 11.1769 3.49618 14.1614 7.17346 14.1614C10.8507 14.1614 13.8352 11.1769 13.8352 7.49963C13.8352 3.82235 10.8507 0.837891 7.17346 0.837891ZM6.50697 12.7838C3.87558 12.4574 1.84375 10.219 1.84375 7.50105C1.84375 7.08802 1.89704 6.69497 1.98365 6.30859L5.17462 9.49957V10.1657C5.17462 10.8985 5.77418 11.4981 6.50697 11.4981V12.7838ZM11.1029 11.0895C10.9297 10.5499 10.4368 10.1635 9.83721 10.1635H9.17103V8.16503C9.17103 7.79863 8.87125 7.49885 8.50486 7.49885H4.50781V6.1665H5.84016C6.20656 6.1665 6.50634 5.86672 6.50634 5.50033V4.16798H7.83868C8.57148 4.16798 9.17103 3.56842 9.17103 2.83563V2.5625C11.1229 3.35525 12.5019 5.26717 12.5019 7.49885C12.5019 8.88449 11.969 10.1436 11.1029 11.0895Z"
+                  fill="#150E06" />
+              </svg>
+              الأخبار
+            </a>
           </li>
-          <li>
-            <a href=""> الاسئلة الشائعة </a>
+
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#"> عن المجلس </a>
           </li>
-          <li>
-            <a href=""> تواصل معنا </a>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#"> تواصل معنا</a>
           </li>
         </ul>
-        <div class="d-flex justify-content-center flex-wrap align-items-center">
-          <div class="phone d-flex align-items-center">
-            <div class="phone-icon">
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+        <!-- Right elements -->
+        <ul class="navbar-nav flex-row right-elements justify-content-center align-items-center">
+          <!-- social Media -->
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <svg width="30" height="30" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M8.91153 9.01351C9.60752 10.4631 10.5563 11.8218 11.7579 13.0233C12.9595 14.2249 14.3181 15.1737 15.7677 15.8697C15.8924 15.9296 15.9548 15.9595 16.0337 15.9825C16.314 16.0642 16.6583 16.0055 16.8957 15.8355C16.9625 15.7877 17.0197 15.7305 17.134 15.6162C17.4836 15.2666 17.6584 15.0918 17.8342 14.9775C18.4971 14.5465 19.3516 14.5465 20.0145 14.9775C20.1903 15.0918 20.3651 15.2666 20.7147 15.6162L20.9096 15.8111C21.441 16.3425 21.7067 16.6082 21.8511 16.8936C22.1382 17.4612 22.1382 18.1315 21.8511 18.699C21.7067 18.9844 21.441 19.2501 20.9096 19.7816L20.7519 19.9392C20.2223 20.4688 19.9575 20.7336 19.5975 20.9359C19.198 21.1603 18.5775 21.3217 18.1193 21.3203C17.7063 21.3191 17.4241 21.239 16.8596 21.0788C13.8263 20.2178 10.9639 18.5933 8.57591 16.2053C6.18793 13.8173 4.56346 10.955 3.70249 7.92159C3.54228 7.35715 3.46217 7.07492 3.46095 6.66197C3.45958 6.20375 3.62094 5.58326 3.84536 5.18376C4.04761 4.82372 4.31242 4.55891 4.84205 4.02929L4.99968 3.87165C5.53112 3.34021 5.79685 3.07449 6.08223 2.93015C6.64979 2.64308 7.32005 2.64308 7.88761 2.93015C8.17299 3.07449 8.43872 3.34021 8.97016 3.87165L9.16503 4.06652C9.51463 4.41613 9.68944 4.59093 9.80372 4.76671C10.2347 5.4296 10.2347 6.28418 9.80372 6.94707C9.68944 7.12285 9.51463 7.29765 9.16503 7.64726C9.05072 7.76157 8.99356 7.81873 8.94572 7.88554C8.77571 8.12297 8.71701 8.46723 8.79873 8.74758C8.82173 8.82647 8.85166 8.88882 8.91153 9.01351Z"
-                  stroke="#00AB67"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  d="M8.69629 17.7814L8.96997 18.2505C10.2015 20.3618 12.6647 20.3618 13.8963 18.2505L14.17 17.7814M6.08454 16.1048L6.15525 16.2505C6.60941 17.1868 7.55856 17.7814 8.59918 17.7814H14.2239C15.1157 17.7814 15.9456 17.3258 16.4244 16.5735C17.1003 15.5115 16.9213 14.1184 15.9989 13.2618L15.9689 13.2339C15.3426 12.6523 15.0343 11.8051 15.1403 10.957L15.1845 10.6033C15.4347 8.60184 13.8741 6.83398 11.857 6.83398H10.6918C8.67723 6.83398 7.1185 8.59969 7.36838 10.5987L7.42268 11.0331C7.52267 11.833 7.23048 12.6321 6.63803 13.1788C5.8288 13.9255 5.60397 15.114 6.08454 16.1048Z"
+                  stroke="black" stroke-linecap="round" />
               </svg>
-            </div>
-            <span>+966541165151</span>
-          </div>
-          <div class="phone d-flex d-flex align-items-center">
-            <div class="phone-icon">
-              <svg
-                width="18"
-                height="22"
-                viewBox="0 0 18 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <svg width="22" height="22" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M8.82812 12.1445C10.485 12.1445 11.8281 10.8014 11.8281 9.14453C11.8281 7.48768 10.485 6.14453 8.82812 6.14453C7.17127 6.14453 5.82812 7.48768 5.82812 9.14453C5.82812 10.8014 7.17127 12.1445 8.82812 12.1445Z"
-                  stroke="#00AB67"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  d="M9.8343 12.0835C12.3196 12.0835 14.3343 10.0688 14.3343 7.5835C14.3343 5.09821 12.3196 3.0835 9.8343 3.0835C7.34902 3.0835 5.3343 5.09821 5.3343 7.5835C5.3343 10.0688 7.34902 12.0835 9.8343 12.0835Z"
+                  stroke="black" stroke-miterlimit="10" />
                 <path
-                  d="M8.82812 21.1445C12.8281 17.1445 16.8281 13.5628 16.8281 9.14453C16.8281 4.72625 13.2464 1.14453 8.82812 1.14453C4.40985 1.14453 0.828125 4.72625 0.828125 9.14453C0.828125 13.5628 4.82812 17.1445 8.82812 21.1445Z"
-                  stroke="#00AB67"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  d="M3.01326 16.021C3.70438 14.8237 4.69853 13.8294 5.89575 13.1381C7.09298 12.4468 8.45109 12.0829 9.83357 12.0829C11.216 12.0829 12.5742 12.4468 13.7714 13.1381C14.9686 13.8294 15.9628 14.8237 16.6539 16.021"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </div>
-            <span>الرياض , السعودية</span>
-          </div>
-          <div class="phone d-flex d-flex align-items-center">
-            <div class="phone-icon">
-              <svg
-                width="22"
-                height="19"
-                viewBox="0 0 22 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+              <svg width="22" height="22" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.59921 6.88092L3.64609 9.83405L6.59921 12.7872" stroke="black" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M11.5222 9.83325H3.64716" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 <path
-                  d="M0.972656 4.62109L9.13758 10.3365C9.79875 10.7994 10.1293 11.0308 10.4889 11.1204C10.8066 11.1996 11.1388 11.1996 11.4564 11.1204C11.816 11.0308 12.1466 10.7994 12.8077 10.3365L20.9727 4.62109M5.77266 17.6211H16.1727C17.8528 17.6211 18.6929 17.6211 19.3346 17.2941C19.8991 17.0065 20.3581 16.5476 20.6457 15.9831C20.9727 15.3413 20.9727 14.5013 20.9727 12.8211V6.42109C20.9727 4.74094 20.9727 3.90086 20.6457 3.25912C20.3581 2.69464 19.8991 2.23569 19.3346 1.94807C18.6929 1.62109 17.8528 1.62109 16.1727 1.62109H5.77266C4.0925 1.62109 3.25242 1.62109 2.61068 1.94807C2.0462 2.23569 1.58726 2.69464 1.29964 3.25912C0.972656 3.90086 0.972656 4.74094 0.972656 6.42109V12.8211C0.972656 14.5013 0.972656 15.3413 1.29964 15.9831C1.58726 16.5476 2.0462 17.0065 2.61068 17.2941C3.25242 17.6211 4.0925 17.6211 5.77266 17.6211Z"
-                  stroke="#00AB67"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+                  d="M11.5211 16.0219H15.4586C15.6078 16.0219 15.7508 15.9626 15.8563 15.8572C15.9618 15.7517 16.0211 15.6086 16.0211 15.4594V4.20941C16.0211 4.06023 15.9618 3.91715 15.8563 3.81166C15.7508 3.70617 15.6078 3.64691 15.4586 3.64691H11.5211"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- Right elements -->
+      </div>
+
+      <!-- Center elements -->
+    </div>
+  </nav>
+  <!-- End Header -->
+
+  <main class="app" style="min-height: 400px; background-color: #fff">
+    <!-- Banner -->
+    <div class="banner">
+      <h3>مرحبا بك فى المجلس</h3>
+    </div>
+    <!-- **************************** -->
+    <!-- Dashboard Taps -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row d-flex align-items-start">
+          <div class="col-lg-3">
+            <div class="tab-items">
+              <p>لوحة التحكم</p>
+              <ul class="nav nav-pills flex-column" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link d-flex justify-content-start active position-relative" id="pills-profile-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9985 14.9995C15.3122 14.9995 17.9985 12.3132 17.9985 8.99951C17.9985 5.6858 15.3122 2.99951 11.9985 2.99951C8.68483 2.99951 5.99854 5.6858 5.99854 8.99951C5.99854 12.3132 8.68483 14.9995 11.9985 14.9995Z"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" />
+                      <path
+                        d="M2.90723 20.2494C3.82873 18.6529 5.15426 17.3272 6.75056 16.4055C8.34686 15.4838 10.1577 14.9985 12.001 14.9985C13.8443 14.9985 15.6551 15.4838 17.2514 16.4055C18.8477 17.3272 20.1732 18.6529 21.0947 20.2494"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>الصفحة الشخصية</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link d-flex justify-content-start position-relative" id="pills-invitations-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-invitations" type="button" role="tab"
+                    aria-controls="pills-invitations" aria-selected="false">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.5 22.75H8.5C2.75 22.75 2.75 19.7 2.75 17V16C2.75 13.77 2.75 11.25 7.5 11.25C8.69 11.25 9.13 11.54 9.75 12C9.78 12.03 9.82 12.05 9.85 12.09L10.87 13.17C11.73 14.08 13.29 14.08 14.15 13.17L15.17 12.09C15.2 12.06 15.23 12.03 15.27 12C15.89 11.53 16.33 11.25 17.52 11.25C22.27 11.25 22.27 13.77 22.27 16V17C22.25 20.82 20.32 22.75 16.5 22.75ZM7.5 12.75C4.25 12.75 4.25 13.77 4.25 16V17C4.25 19.74 4.25 21.25 8.5 21.25H16.5C19.48 21.25 20.75 19.98 20.75 17V16C20.75 13.77 20.75 12.75 17.5 12.75C16.78 12.75 16.63 12.84 16.2 13.16L15.23 14.19C14.51 14.95 13.54 15.37 12.5 15.37C11.46 15.37 10.49 14.95 9.77 14.19L8.8 13.16C8.37 12.84 8.22 12.75 7.5 12.75Z"
+                        fill="black" />
+                      <path
+                        d="M19.5 12.75C19.09 12.75 18.75 12.41 18.75 12V6C18.75 3.77 18.75 2.75 15.5 2.75H9.5C6.25 2.75 6.25 3.77 6.25 6V12C6.25 12.41 5.91 12.75 5.5 12.75C5.09 12.75 4.75 12.41 4.75 12V6C4.75 3.77 4.75 1.25 9.5 1.25H15.5C20.25 1.25 20.25 3.77 20.25 6V12C20.25 12.41 19.91 12.75 19.5 12.75Z"
+                        fill="black" />
+                      <path
+                        d="M14.3808 9.98047H11.0508C10.6408 9.98047 10.3008 9.64047 10.3008 9.23047C10.3008 8.82047 10.6408 8.48047 11.0508 8.48047H14.3808C14.7908 8.48047 15.1308 8.82047 15.1308 9.23047C15.1308 9.64047 14.8008 9.98047 14.3808 9.98047Z"
+                        fill="black" />
+                      <path
+                        d="M15.2207 6.98047H10.2207C9.8107 6.98047 9.4707 6.64047 9.4707 6.23047C9.4707 5.82047 9.8107 5.48047 10.2207 5.48047H15.2207C15.6307 5.48047 15.9707 5.82047 15.9707 6.23047C15.9707 6.64047 15.6407 6.98047 15.2207 6.98047Z"
+                        fill="black" />
+                    </svg>
+                    <span>الدعوات</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link d-flex justify-content-start position-relative" id="pills-setting-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-setting" type="button" role="tab"
+                    aria-controls="pills-setting" aria-selected="false">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M2.5 12.8799V11.1199C2.5 10.0799 3.35 9.21994 4.4 9.21994C6.21 9.21994 6.95 7.93994 6.04 6.36994C5.52 5.46994 5.83 4.29994 6.74 3.77994L8.47 2.78994C9.26 2.31994 10.28 2.59994 10.75 3.38994L10.86 3.57994C11.76 5.14994 13.24 5.14994 14.15 3.57994L14.26 3.38994C14.73 2.59994 15.75 2.31994 16.54 2.78994L18.27 3.77994C19.18 4.29994 19.49 5.46994 18.97 6.36994C18.06 7.93994 18.8 9.21994 20.61 9.21994C21.65 9.21994 22.51 10.0699 22.51 11.1199V12.8799C22.51 13.9199 21.66 14.7799 20.61 14.7799C18.8 14.7799 18.06 16.0599 18.97 17.6299C19.49 18.5399 19.18 19.6999 18.27 20.2199L16.54 21.2099C15.75 21.6799 14.73 21.3999 14.26 20.6099L14.15 20.4199C13.25 18.8499 11.77 18.8499 10.86 20.4199L10.75 20.6099C10.28 21.3999 9.26 21.6799 8.47 21.2099L6.74 20.2199C5.83 19.6999 5.52 18.5299 6.04 17.6299C6.95 16.0599 6.21 14.7799 4.4 14.7799C3.35 14.7799 2.5 13.9199 2.5 12.8799Z"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                    <span>الاعدادت</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link d-flex justify-content-start position-relative" id="" data-bs-toggle="pill"
+                    data-bs-target="" type="button" role="tab" aria-controls="" aria-selected="false">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.8135 8.0625L20.751 12L16.8135 15.9375" stroke="#150E06" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10.248 11.998H20.748" stroke="#150E06" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.249 20.251H4.99902C4.80011 20.251 4.60935 20.172 4.46869 20.0313C4.32804 19.8907 4.24902 19.6999 4.24902 19.501V4.50098C4.24902 4.30206 4.32804 4.1113 4.46869 3.97065C4.60935 3.82999 4.80011 3.75098 4.99902 3.75098H10.249"
+                        stroke="#150E06" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span>تسجيل خروج</span>
+                  </button>
+                </li>
+              </ul>
             </div>
-            <span>Almajles@gmail.com</span>
           </div>
-        </div>
-        <div class="social d-flex justify-content-center">
-          <a href="#">
-            <img src="./assets/imgs/social/facebook.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="./assets/imgs/social/facebook (1).svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="./assets/imgs/social/youtube.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="./assets/imgs/social/x.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="./assets/imgs/social/telegram.svg" alt="" />
-          </a>
-          <a href="#">
-            <img src="./assets/imgs/social/whatsapp.svg" alt="" />
-          </a>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="copy-right w-100 py-3">جميع الحقوق محفوظة @2024</div>
+          <div class="col-lg-9">
+            <div class="tab-content w-100" id="pills-tabContent">
+              <!-- ***************************PROFILE***************************** -->
+              <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                aria-labelledby="pills-profile-tab">
+                <div class="profile-content mb-5">
+                  <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-center">
+                      <div class="member-img">
+                        <img src="./assets/imgs/profile.jpg" alt="" />
+                        <p class="member-name">نواف بن عبدالعزيز</p>
+                        <div class="member-type">عضو مميز</div>
+                        <a href="#">تعديل</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                      <div class="line"></div>
+                      <div class="personal-info">
+                        <div class="info">البيانات الشخصية</div>
+                        <div class="d-flex data">
+                          <div class="d-flex">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M12.7497 3.5415H4.24967C3.46727 3.5415 2.83301 4.17577 2.83301 4.95817V13.4582C2.83301 14.2406 3.46727 14.8748 4.24967 14.8748H12.7497C13.5321 14.8748 14.1663 14.2406 14.1663 13.4582V4.95817C14.1663 4.17577 13.5321 3.5415 12.7497 3.5415Z"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.333 2.125V4.95833" stroke="black" stroke-width="0.9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M5.6665 2.125V4.95833" stroke="black" stroke-width="0.9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M2.83301 7.7915H14.1663" stroke="black" stroke-width="0.9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M7.7915 10.625H8.49984" stroke="black" stroke-width="0.9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M8.49976 10.625V12.75" stroke="black" stroke-width="0.9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            <span>تاريخ الاشتراك :</span>
+                          </div>
+                          <div class="data-info">01/01/2024</div>
+                        </div>
+                        <!-- ********* -->
+                        <div class="d-flex data">
+                          <div class="d-flex">
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M13.1491 10.5455C13.1491 10.7472 13.1043 10.9545 13.0091 11.1562C12.9138 11.3578 12.7906 11.5483 12.6281 11.7276C12.3536 12.0301 12.0511 12.2486 11.7094 12.3886C11.3733 12.5287 11.0092 12.6015 10.617 12.6015C10.0456 12.6015 9.435 12.467 8.79076 12.1925C8.14653 11.918 7.5023 11.5483 6.86367 11.0833C6.21944 10.6128 5.60882 10.0918 5.02621 9.51477C4.44921 8.93216 3.92822 8.32155 3.46325 7.68292C3.00389 7.04429 2.63416 6.40566 2.36526 5.77263C2.09636 5.134 1.96191 4.52338 1.96191 3.94077C1.96191 3.55984 2.02914 3.19571 2.16359 2.85959C2.29803 2.51786 2.51091 2.20415 2.80782 1.92405C3.16635 1.57112 3.55849 1.39746 3.97304 1.39746C4.12989 1.39746 4.28675 1.43107 4.4268 1.4983C4.57245 1.56552 4.7013 1.66636 4.80213 1.81201L6.1018 3.64387C6.20264 3.78392 6.27546 3.91276 6.32588 4.03601C6.3763 4.15365 6.40431 4.27129 6.40431 4.37773C6.40431 4.51218 6.36509 4.64663 6.28667 4.77547C6.21384 4.90432 6.1074 5.03877 5.97295 5.17322L5.5472 5.61577C5.48558 5.6774 5.45757 5.75022 5.45757 5.83986C5.45757 5.88467 5.46317 5.92389 5.47437 5.9687C5.49118 6.01352 5.50799 6.04713 5.51919 6.08074C5.62003 6.26561 5.79369 6.50649 6.04018 6.7978C6.29227 7.0891 6.56116 7.38601 6.85247 7.68292C7.15498 7.97982 7.44628 8.25432 7.74319 8.50641C8.03449 8.7529 8.27538 8.92096 8.46585 9.0218C8.49386 9.033 8.52747 9.04981 8.56668 9.06661C8.6115 9.08342 8.65632 9.08902 8.70673 9.08902C8.80197 9.08902 8.87479 9.05541 8.93642 8.99379L9.36217 8.57364C9.50222 8.43359 9.63667 8.32715 9.76551 8.25992C9.89436 8.1815 10.0232 8.14228 10.1633 8.14228C10.2697 8.14228 10.3817 8.16469 10.505 8.21511C10.6282 8.26553 10.7571 8.33835 10.8971 8.43359L12.7514 9.75006C12.897 9.85089 12.9979 9.96854 13.0595 10.1086C13.1155 10.2486 13.1491 10.3887 13.1491 10.5455Z"
+                                stroke="black" stroke-width="0.9" stroke-miterlimit="10" />
+                            </svg>
+
+                            <span>رقم الجوال :</span>
+                          </div>
+                          <div class="data-info">+965564165145</div>
+                        </div>
+                        <!-- ********* -->
+                        <div class="d-flex data">
+                          <div class="d-flex">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M11.7529 13.6787H5.25879C2.66113 13.6787 2.01172 13.0293 2.01172 10.4316V5.23633C2.01172 2.63867 2.66113 1.98926 5.25879 1.98926H11.7529C14.3506 1.98926 15 2.63867 15 5.23633V10.4316C15 13.0293 14.3506 13.6787 11.7529 13.6787Z"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M9.80469 5.23633H13.0518" stroke="black" stroke-width="0.9"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M10.4531 7.83398H13.0508" stroke="black" stroke-width="0.9"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.7539 10.4316H13.0527" stroke="black" stroke-width="0.9"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M6.23208 7.37285C6.88126 7.37285 7.40752 6.84659 7.40752 6.19741C7.40752 5.54823 6.88126 5.02197 6.23208 5.02197C5.5829 5.02197 5.05664 5.54823 5.05664 6.19741C5.05664 6.84659 5.5829 7.37285 6.23208 7.37285Z"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M8.50684 10.6457C8.41592 9.70409 7.66909 8.96376 6.72744 8.87933C6.40273 8.84686 6.07153 8.84686 5.74033 8.87933C4.79868 8.97025 4.05186 9.70409 3.96094 10.6457"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <span>رقم الهوية :</span>
+                          </div>
+                          <div class="data-info">1256515</div>
+                        </div>
+                        <!-- ********* -->
+                        <div class="d-flex data">
+                          <div class="d-flex">
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M0.578125 3.15234L5.6812 6.7245C6.09443 7.01376 6.30105 7.15839 6.52579 7.21441C6.72431 7.2639 6.93194 7.2639 7.13046 7.21441C7.3552 7.15839 7.56182 7.01376 7.97505 6.7245L13.0781 3.15234M3.57813 11.2773H10.0781C11.1282 11.2773 11.6533 11.2773 12.0544 11.073C12.4072 10.8932 12.694 10.6064 12.8738 10.2536C13.0781 9.85249 13.0781 9.32744 13.0781 8.27734V4.27734C13.0781 3.22725 13.0781 2.7022 12.8738 2.30111C12.694 1.94831 12.4072 1.66147 12.0544 1.48171C11.6533 1.27734 11.1282 1.27734 10.0781 1.27734H3.57813C2.52803 1.27734 2.00298 1.27734 1.60189 1.48171C1.24909 1.66147 0.96225 1.94831 0.782488 2.30111C0.578125 2.7022 0.578125 3.22725 0.578125 4.27734V8.27734C0.578125 9.32744 0.578125 9.85249 0.782488 10.2536C0.96225 10.6064 1.24909 10.8932 1.60189 11.073C2.00298 11.2773 2.52803 11.2773 3.57813 11.2773Z"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>البريد الالكتروني :</span>
+                          </div>
+                          <div class="data-info">Nawoafben@gmail.com</div>
+                        </div>
+                        <!-- ********* -->
+                        <div class="d-flex data">
+                          <div class="d-flex">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.84097 5.79278C7.22594 5.79278 8.34869 4.67004 8.34869 3.28506C8.34869 1.90009 7.22594 0.777344 5.84097 0.777344C4.456 0.777344 3.33325 1.90009 3.33325 3.28506C3.33325 4.67004 4.456 5.79278 5.84097 5.79278Z"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M10.6984 12.777C10.5044 10.7681 8.91109 9.18861 6.90214 9.0085C6.2094 8.93922 5.50281 8.93922 4.79621 9.0085C2.78727 9.20247 1.19397 10.7681 1 12.777"
+                                stroke="black" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>الجنسية :</span>
+                          </div>
+                          <div class="data-info d-flex">
+                            سعودي
+                            <img src="./assets/imgs/Flag-Saudi-Arabia.webp" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--************************ Data Table****************** -->
+                <!-- <table id="example" class="mt-5" style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th>إسم الفاعلية</th>
+                      <th>تاريخ الفاعلية</th>
+                      <th>حالة الفاعلية</th>
+                      <th>تاريخ التسجيل</th>
+                      <th>سبب عدم الحضور</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tiger Nixon</td>
+                      <td>System Architect</td>
+                      <td>Edinburgh</td>
+                      <td>61</td>
+                      <td>2011-04-25</td>
+                    </tr>
+                    <tr>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>2011-07-25</td>
+                    </tr>
+                    <tr>
+                      <td>Ashton Cox</td>
+                      <td>Junior Technical Author</td>
+                      <td>San Francisco</td>
+                      <td>66</td>
+                      <td>2009-01-12</td>
+                    </tr>
+                    <tr>
+                      <td>Cedric Kelly</td>
+                      <td>Senior Javascript Developer</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                      <td>2012-03-29</td>
+                    </tr>
+                    <tr>
+                      <td>Airi Satou</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>33</td>
+                      <td>2008-11-28</td>
+                    </tr>
+                    <tr>
+                      <td>Brielle Williamson</td>
+                      <td>Integration Specialist</td>
+                      <td>New York</td>
+                      <td>61</td>
+                      <td>2012-12-02</td>
+                    </tr>
+                    <tr>
+                      <td>Herrod Chandler</td>
+                      <td>Sales Assistant</td>
+                      <td>San Francisco</td>
+                      <td>59</td>
+                      <td>2012-08-06</td>
+                    </tr>
+                    <tr>
+                      <td>Rhona Davidson</td>
+                      <td>Integration Specialist</td>
+                      <td>Tokyo</td>
+                      <td>55</td>
+                      <td>2010-10-14</td>
+                    </tr>
+                    <tr>
+                      <td>Colleen Hurst</td>
+                      <td>Javascript Developer</td>
+                      <td>San Francisco</td>
+                      <td>39</td>
+                      <td>2009-09-15</td>
+                    </tr>
+                    <tr>
+                      <td>Sonya Frost</td>
+                      <td>Software Engineer</td>
+                      <td>Edinburgh</td>
+                      <td>23</td>
+                      <td>2008-12-13</td>
+                    </tr>
+                    <tr>
+                      <td>Jena Gaines</td>
+                      <td>Office Manager</td>
+                      <td>London</td>
+                      <td>30</td>
+                      <td>2008-12-19</td>
+                    </tr>
+                    <tr>
+                      <td>Quinn Flynn</td>
+                      <td>Support Lead</td>
+                      <td>Edinburgh</td>
+                      <td>22</td>
+                      <td>2013-03-03</td>
+                    </tr>
+                    <tr>
+                      <td>Charde Marshall</td>
+                      <td>Regional Director</td>
+                      <td>San Francisco</td>
+                      <td>36</td>
+                      <td>2008-10-16</td>
+                    </tr>
+                    <tr>
+                      <td>Haley Kennedy</td>
+                      <td>Senior Marketing Designer</td>
+                      <td>London</td>
+                      <td>43</td>
+                      <td>2012-12-18</td>
+                    </tr>
+                    <tr>
+                      <td>Tatyana Fitzpatrick</td>
+                      <td>Regional Director</td>
+                      <td>London</td>
+                      <td>19</td>
+                      <td>2010-03-17</td>
+                    </tr>
+                    <tr>
+                      <td>Michael Silva</td>
+                      <td>Marketing Designer</td>
+                      <td>London</td>
+                      <td>66</td>
+                      <td>2012-11-27</td>
+                    </tr>
+                    <tr>
+                      <td>Paul Byrd</td>
+                      <td>Chief Financial Officer (CFO)</td>
+                      <td>New York</td>
+                      <td>64</td>
+                      <td>2010-06-09</td>
+                    </tr>
+                    <tr>
+                      <td>Gloria Little</td>
+                      <td>Systems Administrator</td>
+                      <td>New York</td>
+                      <td>59</td>
+                      <td>2009-04-10</td>
+                    </tr>
+                    <tr>
+                      <td>Bradley Greer</td>
+                      <td>Software Engineer</td>
+                      <td>London</td>
+                      <td>41</td>
+                      <td>2012-10-13</td>
+                    </tr>
+                    <tr>
+                      <td>Dai Rios</td>
+                      <td>Personnel Lead</td>
+                      <td>Edinburgh</td>
+                      <td>35</td>
+                      <td>2012-09-26</td>
+                    </tr>
+                    <tr>
+                      <td>Jenette Caldwell</td>
+                      <td>Development Lead</td>
+                      <td>New York</td>
+                      <td>30</td>
+                      <td>2011-09-03</td>
+                    </tr>
+                    <tr>
+                      <td>Yuri Berry</td>
+                      <td>Chief Marketing Officer (CMO)</td>
+                      <td>New York</td>
+                      <td>40</td>
+                      <td>2009-06-25</td>
+                    </tr>
+                    <tr>
+                      <td>Caesar Vance</td>
+                      <td>Pre-Sales Support</td>
+                      <td>New York</td>
+                      <td>21</td>
+                      <td>2011-12-12</td>
+                    </tr>
+                    <tr>
+                      <td>Doris Wilder</td>
+                      <td>Sales Assistant</td>
+                      <td>Sydney</td>
+                      <td>23</td>
+                      <td>2010-09-20</td>
+                    </tr>
+                    <tr>
+                      <td>Angelica Ramos</td>
+                      <td>Chief Executive Officer (CEO)</td>
+                      <td>London</td>
+                      <td>47</td>
+                      <td>2009-10-09</td>
+                    </tr>
+                    <tr>
+                      <td>Gavin Joyce</td>
+                      <td>Developer</td>
+                      <td>Edinburgh</td>
+                      <td>42</td>
+                      <td>2010-12-22</td>
+                    </tr>
+                    <tr>
+                      <td>Jennifer Chang</td>
+                      <td>Regional Director</td>
+                      <td>Singapore</td>
+                      <td>28</td>
+                      <td>2010-11-14</td>
+                    </tr>
+                    <tr>
+                      <td>Brenden Wagner</td>
+                      <td>Software Engineer</td>
+                      <td>San Francisco</td>
+                      <td>28</td>
+                      <td>2011-06-07</td>
+                    </tr>
+                    <tr>
+                      <td>Fiona Green</td>
+                      <td>Chief Operating Officer (COO)</td>
+                      <td>San Francisco</td>
+                      <td>48</td>
+                      <td>2010-03-11</td>
+                    </tr>
+                    <tr>
+                      <td>Shou Itou</td>
+                      <td>Regional Marketing</td>
+                      <td>Tokyo</td>
+                      <td>20</td>
+                      <td>2011-08-14</td>
+                    </tr>
+                    <tr>
+                      <td>Michelle House</td>
+                      <td>Integration Specialist</td>
+                      <td>Sydney</td>
+                      <td>37</td>
+                      <td>2011-06-02</td>
+                    </tr>
+                    <tr>
+                      <td>Suki Burks</td>
+                      <td>Developer</td>
+                      <td>London</td>
+                      <td>53</td>
+                      <td>2009-10-22</td>
+
+                    </tr>
+
+                    <tr>
+                      <td>Bruno Nash</td>
+                      <td>Software Engineer</td>
+                      <td>London</td>
+                      <td>38</td>
+                      <td>2011-05-03</td>
+
+                    </tr>
+                    <tr>
+                      <td>Sakura Yamamoto</td>
+                      <td>Support Engineer</td>
+                      <td>Tokyo</td>
+                      <td>37</td>
+                      <td>2009-08-19</td>
+
+                    </tr>
+                    <tr>
+                      <td>Thor Walton</td>
+                      <td>Developer</td>
+                      <td>New York</td>
+                      <td>61</td>
+                      <td>2013-08-11</td>
+
+                    </tr>
+                    <tr>
+                      <td>Finn Camacho</td>
+                      <td>Support Engineer</td>
+                      <td>San Francisco</td>
+                      <td>47</td>
+                      <td>2009-07-07</td>
+
+                    </tr>
+                    <tr>
+                      <td>Serge Baldwin</td>
+                      <td>Data Coordinator</td>
+                      <td>Singapore</td>
+                      <td>64</td>
+                      <td>2012-04-09</td>
+
+                    </tr>
+                    <tr>
+                      <td>Zenaida Frank</td>
+                      <td>Software Engineer</td>
+                      <td>New York</td>
+                      <td>63</td>
+                      <td>2010-01-04</td>
+
+                    </tr>
+                    <tr>
+                      <td>Zorita Serrano</td>
+                      <td>Software Engineer</td>
+                      <td>San Francisco</td>
+                      <td>56</td>
+                      <td>2012-06-01</td>
+
+                    </tr>
+                    <tr>
+                      <td>Jennifer Acosta</td>
+                      <td>Junior Javascript Developer</td>
+                      <td>Edinburgh</td>
+                      <td>43</td>
+                      <td>2013-02-01</td>
+
+                    </tr>
+                    <tr>
+                      <td>Cara Stevens</td>
+                      <td>Sales Assistant</td>
+                      <td>New York</td>
+                      <td>46</td>
+                      <td>2011-12-06</td>
+
+                    </tr>
+                    <tr>
+                      <td>Hermione Butler</td>
+                      <td>Regional Director</td>
+                      <td>London</td>
+                      <td>47</td>
+                      <td>2011-03-21</td>
+
+                    </tr>
+                    <tr>
+                      <td>Lael Greer</td>
+                      <td>Systems Administrator</td>
+                      <td>London</td>
+                      <td>21</td>
+                      <td>2009-02-27</td>
+
+                    </tr>
+                    <tr>
+                      <td>Jonas Alexander</td>
+                      <td>Developer</td>
+                      <td>San Francisco</td>
+                      <td>30</td>
+                      <td>2010-07-14</td>
+
+                    </tr>
+                    <tr>
+                      <td>Shad Decker</td>
+                      <td>Regional Director</td>
+                      <td>Edinburgh</td>
+                      <td>51</td>
+                      <td>2008-11-13</td>
+
+                    </tr>
+                    <tr>
+                      <td>Michael Bruce</td>
+                      <td>Javascript Developer</td>
+                      <td>Singapore</td>
+                      <td>29</td>
+                      <td>2011-06-27</td>
+
+                    </tr>
+                    <tr>
+                      <td>Donna Snider</td>
+                      <td>Customer Support</td>
+                      <td>New York</td>
+                      <td>27</td>
+                      <td>2011-01-25</td>
+
+                    </tr>
+                  </tbody>
+                </table> -->
+                <div class="table-container">
+                  <h4 class="table-title">
+                    الفاعليات
+                  </h4>
+                  <table class="classic-table">
+                    <!-- tabel header  -->
+                    <tr>
+                      <th>اسم الفاعلية</th>
+                      <th>تاريخ الفاعلية</th>
+                      <th>حالة الفاعلية</th>
+                      <th>تاريخ التسجيل</th>
+                      <th>سبب عدم الحضور</th>
+                    </tr>
+                    <!-- tabel header  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status green">
+                          تم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status">
+                          --
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          لم يتم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          تم الغاء الفاعلية لاسباب طارئة
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status green">
+                          تم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status">
+                          --
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          لم يتم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          تم الغاء الفاعلية لاسباب طارئة
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status green">
+                          تم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status">
+                          --
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          لم يتم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          تم الغاء الفاعلية لاسباب طارئة
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status green">
+                          تم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status">
+                          --
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+
+                    <!-- single tabel row  -->
+                    <tr>
+                      <td class="name">اللقاء الثالث
+                        من شهر رجب 1445 هـ</td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          لم يتم الحضور
+                        </span>
+                      </td>
+                      <td class="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M13.0036 4.06445H4.50358C3.72118 4.06445 3.08691 4.69872 3.08691 5.48112V13.9811C3.08691 14.7635 3.72118 15.3978 4.50358 15.3978H13.0036C13.786 15.3978 14.4202 14.7635 14.4202 13.9811V5.48112C14.4202 4.69872 13.786 4.06445 13.0036 4.06445Z"
+                            stroke="#94A3B8" stroke-width="1.05371" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M11.5867 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M5.91895 2.64844V5.48177" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M3.08691 8.31445H14.4202" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.04395 11.1484H8.75228" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.75488 11.1484V13.2734" stroke="#94A3B8" stroke-width="1.05371"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        25 يناير 2024
+                      </td>
+                      <td>
+                        <span class="status red">
+                          تم الغاء الفاعلية لاسباب طارئة
+                        </span>
+                      </td>
+                    </tr>
+                    <!-- single tabel row  -->
+                  </table>
+
+                  <!-- table pagination  -->
+                  <div class="table-pagination">
+                    <div class="selction">
+                      <span class="title">
+                        عدد الفاعليات بالصفحة
+                      </span>
+                      <select class="nice-select">
+                        <option data-display="10 فاعليات">10 فاعليات</option>
+                        <option value="1">20 فاعليات</option>
+                        <option value="2">30 فاعليات</option>
+                        <option value="4">40 فاعليات</option>
+                      </select>
+                    </div>
+
+                    <div class="table-pages">
+                      <button class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M6 12L10 8L6 4" stroke="#64748B" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <a href="#" class="page current">1</a>
+                      <a href="#" class="page">2</a>
+                      <a href="#" class="page">3</a>
+                      <a href="#" class="page">4</a>
+                      <a href="#" class="page">...</a>
+                      <button class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M10 4L6 8L10 12" stroke="#64748B" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- table pagination  -->
+                </div>
+
+              </div>
+              <!-- ***************************INVITATION**************************** -->
+              <div class="tab-pane fade" id="pills-invitations" role="tabpanel" aria-labelledby="pills-invitations-tab">
+                <div class="invitation-number">
+                  اجمالي الدعوات : <span>3</span>
+                </div>
+                <div class="invitations-details mt-5 mx-xl-3">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-6 d-flex justify-content-start align-items-center">
+                      <div class="invitation-img">
+                        <img src="./assets/imgs/invitation.jpg" alt="" />
+                      </div>
+                      <div class="invitation-info">
+                        <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
+                        <div class="date">
+                          <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
+                              fill="#64748B"></path>
+                            <path
+                              d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
+                              fill="#64748B"></path>
+                          </svg>
+                          <span>05/02/2024</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                      <button class="accept">قبول</button>
+                      <button class="reject">رفض</button>
+                      <button class="show-invitation">عرض الدعوة</button>
+                    </div>
+                  </div>
+                  <!-- ******************* -->
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-6 d-flex justify-content-start align-items-center">
+                      <div class="invitation-img">
+                        <img src="./assets/imgs/invitation.jpg" alt="" />
+                      </div>
+                      <div class="invitation-info">
+                        <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
+                        <div class="date">
+                          <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
+                              fill="#64748B"></path>
+                            <path
+                              d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
+                              fill="#64748B"></path>
+                          </svg>
+                          <span>05/02/2024</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                      <button class="accept">قبول</button>
+                      <button class="reject">رفض</button>
+                      <button class="show-invitation">عرض الدعوة</button>
+                    </div>
+                  </div>
+                  <!-- ******************* -->
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-6 d-flex justify-content-start align-items-center">
+                      <div class="invitation-img">
+                        <img src="./assets/imgs/invitation.jpg" alt="" />
+                      </div>
+                      <div class="invitation-info">
+                        <p>تنظيم المؤتمر الدور التاني للأمن الغذائي</p>
+                        <div class="date">
+                          <svg width="14" height="14" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.62012 0.921875C9.92852 0.921875 12.6201 3.61348 12.6201 6.92188C12.6201 10.2303 9.92852 12.9219 6.62012 12.9219C3.31172 12.9219 0.620117 10.2303 0.620117 6.92188C0.620117 3.61348 3.31172 0.921875 6.62012 0.921875ZM6.62012 11.7219C9.26672 11.7219 11.4201 9.56847 11.4201 6.92188C11.4201 4.27528 9.26672 2.12188 6.62012 2.12188C3.97352 2.12188 1.82012 4.27528 1.82012 6.92188C1.82012 9.56847 3.97352 11.7219 6.62012 11.7219Z"
+                              fill="#64748B"></path>
+                            <path
+                              d="M6.01973 3.92188H7.21973V7.17027L5.24393 9.14607L4.39553 8.29767L6.01973 6.67348V3.92188Z"
+                              fill="#64748B"></path>
+                          </svg>
+                          <span>05/02/2024</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                      <button class="accept">قبول</button>
+                      <button class="reject">رفض</button>
+                      <button class="show-invitation">عرض الدعوة</button>
+                    </div>
+                  </div>
+                  <!-- ******************* -->
+                </div>
+              </div>
+              <!-- ***************************SETTING**************************** -->
+              <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
+                <div class="personal-setting">
+                  <h4 class="title">البيانات الشخصية</h4>
+                  <div class="row align-items-center px-2 px-lg-5">
+                    <div class="col-sm-6">
+                      <div class="profile-image">
+                        <img src="assets/imgs/users/1.jpeg" alt="user image">
+                        <button>حذف الصورة</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <form action="#">
+                        <div class="form-input">
+                          <label for="name">الاسم بالكامل</label>
+                          <input type="text" id="name" value="نواف بن عبدالعزيز">
+                        </div>
+                        <div class="form-input">
+                          <label for="phone">رقم الهاتف</label>
+                          <input type="text" id="phone" value="+968484141511">
+                        </div>
+                        <div class="form-input">
+                          <label for="email">البريد الالكتروني</label>
+                          <input type="text" id="email" value="Nawoafben@gmail.com">
+                        </div>
+                        <div class="form-input">
+                          <label for="nationality">الجنسية</label>
+                          <input type="text" id="nationality" value="سعودي">
+                        </div>
+                        <button type="submit">
+                          حفظ الاعدادات
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="personal-setting">
+                  <h4 class="title">بيانات الهوية</h4>
+
+                  <form action="#" class="px-2 px-lg-5">
+                    <div class="form-input">
+                      <label for="id">رقم الهوية</label>
+                      <input type="text" id="id" value="1262665541">
+                    </div>
+                    <div class="form-input">
+                      <label for="id-image">صورة الهوية</label>
+                      <label for="id-image" class="custom-label">
+                        <span class="green">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
+                            fill="none">
+                            <g clip-path="url(#clip0_1_705)">
+                              <path d="M14.5753 15.404L10.9781 11.6685L7.38086 15.404" stroke="#00AB67"
+                                stroke-width="1.79862" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M10.9805 11.6685V20.0735" stroke="#00AB67" stroke-width="1.79862"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M18.5244 17.6365C19.4015 17.1399 20.0945 16.3541 20.4938 15.4032C20.8931 14.4522 20.9761 13.3903 20.7297 12.3849C20.4833 11.3795 19.9215 10.488 19.1329 9.85101C18.3444 9.21403 17.3741 8.86789 16.3751 8.8672H15.2419C14.9697 7.77383 14.4624 6.75877 13.758 5.89834C13.0537 5.0379 12.1707 4.35447 11.1754 3.89944C10.18 3.4444 9.09836 3.2296 8.0116 3.27118C6.92485 3.31276 5.86131 3.60964 4.90095 4.1395C3.94059 4.66936 3.10839 5.41842 2.46692 6.33035C1.82546 7.24228 1.39141 8.29336 1.19742 9.40456C1.00343 10.5158 1.05455 11.6582 1.34692 12.7459C1.63929 13.8337 2.16531 14.8384 2.88544 15.6846"
+                                stroke="#00AB67" stroke-width="1.79862" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M14.5753 15.404L10.9781 11.6685L7.38086 15.404" stroke="#00AB67"
+                                stroke-width="1.79862" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1_705">
+                                <rect width="21.5834" height="22.4135" fill="white"
+                                  transform="translate(0.189453 0.461426)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          يمكنك رفع الملف من هنا
+
+                        </span>
+                        <span>
+                          يمكنك رفع الملف من هنا
+                        </span>
+                        <span class="button">
+                          اختر الملف
+                        </span>
+                      </label>
+                      <input type="file" id="id-image" class="d-none">
+                    </div>
+
+
+                    <button type="submit">
+                      حفظ الاعدادات
+                    </button>
+                  </form>
+                </div>
+
+                <div class="personal-setting">
+                  <h4 class="title">تغيير كلمة المرور</h4>
+
+                  <form action="#" class="px-2 px-lg-5">
+                    <div class="form-input">
+                      <label for="password">رقم المرور الحالي</label>
+                      <input type="password" id="password" value="1262665541">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="form-input w-50 ps-2">
+                        <label for="new-password">رقم المرور الجديد</label>
+                        <input type="password" id="new-password" value="1262665541">
+                      </div>
+                      <div class="form-input w-50 pe-2">
+                        <label for="new-password-confirm">تأكيد رقم المرور الجديد</label>
+                        <input type="password" id="new-password-confirm" value="1262665541">
+                      </div>
+                    </div>
+                    <button type="submit">
+                      حفظ الاعدادات
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-----------scripts------------>
-    <script src="assets/js/jquery.min.js"></script>
-    <!---------bootstrap--------->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-----------Nice Select------------->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!----------- Data Table ------------>
-    <script src="assets/js/dataTable.min.js"></script>
-    <!------------feather icons---------->
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!------------------------------>
-  </body>
+    <!-- **************************** -->
+    <!-- Email section-->
+    <section class="send-email mt-5">
+      <div class="container">
+        <h2>اكتب بريدك الإلكتروني للحصول على الأخبار والفاعليات أسبوعيا</h2>
+        <div class="d-flex justify-content-center mb-4">
+          <input type="email" name="" id="" placeholder="بريدك الأكتروني" />
+          <button>ارسال</button>
+        </div>
+        <p>
+          جميع الفاعليات ونشرات الأخبار الأسبوعية ستصلك على بريدك الألكتروني
+        </p>
+      </div>
+    </section>
+    <!-- **************************** -->
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h2>المجلس</h2>
+      <ul class="d-flex justify-content-center flex-wrap">
+        <li><a href=""> الصفحة الرئيسية </a></li>
+        <li>
+          <a href=""> الفاعليات </a>
+        </li>
+        <li>
+          <a href=""> الأخبار </a>
+        </li>
+        <li>
+          <a href=""> عن المجلس </a>
+        </li>
+        <li>
+          <a href=""> الاسئلة الشائعة </a>
+        </li>
+        <li>
+          <a href=""> تواصل معنا </a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-center flex-wrap align-items-center">
+        <div class="phone d-flex align-items-center">
+          <div class="phone-icon">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.91153 9.01351C9.60752 10.4631 10.5563 11.8218 11.7579 13.0233C12.9595 14.2249 14.3181 15.1737 15.7677 15.8697C15.8924 15.9296 15.9548 15.9595 16.0337 15.9825C16.314 16.0642 16.6583 16.0055 16.8957 15.8355C16.9625 15.7877 17.0197 15.7305 17.134 15.6162C17.4836 15.2666 17.6584 15.0918 17.8342 14.9775C18.4971 14.5465 19.3516 14.5465 20.0145 14.9775C20.1903 15.0918 20.3651 15.2666 20.7147 15.6162L20.9096 15.8111C21.441 16.3425 21.7067 16.6082 21.8511 16.8936C22.1382 17.4612 22.1382 18.1315 21.8511 18.699C21.7067 18.9844 21.441 19.2501 20.9096 19.7816L20.7519 19.9392C20.2223 20.4688 19.9575 20.7336 19.5975 20.9359C19.198 21.1603 18.5775 21.3217 18.1193 21.3203C17.7063 21.3191 17.4241 21.239 16.8596 21.0788C13.8263 20.2178 10.9639 18.5933 8.57591 16.2053C6.18793 13.8173 4.56346 10.955 3.70249 7.92159C3.54228 7.35715 3.46217 7.07492 3.46095 6.66197C3.45958 6.20375 3.62094 5.58326 3.84536 5.18376C4.04761 4.82372 4.31242 4.55891 4.84205 4.02929L4.99968 3.87165C5.53112 3.34021 5.79685 3.07449 6.08223 2.93015C6.64979 2.64308 7.32005 2.64308 7.88761 2.93015C8.17299 3.07449 8.43872 3.34021 8.97016 3.87165L9.16503 4.06652C9.51463 4.41613 9.68944 4.59093 9.80372 4.76671C10.2347 5.4296 10.2347 6.28418 9.80372 6.94707C9.68944 7.12285 9.51463 7.29765 9.16503 7.64726C9.05072 7.76157 8.99356 7.81873 8.94572 7.88554C8.77571 8.12297 8.71701 8.46723 8.79873 8.74758C8.82173 8.82647 8.85166 8.88882 8.91153 9.01351Z"
+                stroke="#00AB67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span>+966541165151</span>
+        </div>
+        <div class="phone d-flex d-flex align-items-center">
+          <div class="phone-icon">
+            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.82812 12.1445C10.485 12.1445 11.8281 10.8014 11.8281 9.14453C11.8281 7.48768 10.485 6.14453 8.82812 6.14453C7.17127 6.14453 5.82812 7.48768 5.82812 9.14453C5.82812 10.8014 7.17127 12.1445 8.82812 12.1445Z"
+                stroke="#00AB67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M8.82812 21.1445C12.8281 17.1445 16.8281 13.5628 16.8281 9.14453C16.8281 4.72625 13.2464 1.14453 8.82812 1.14453C4.40985 1.14453 0.828125 4.72625 0.828125 9.14453C0.828125 13.5628 4.82812 17.1445 8.82812 21.1445Z"
+                stroke="#00AB67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span>الرياض , السعودية</span>
+        </div>
+        <div class="phone d-flex d-flex align-items-center">
+          <div class="phone-icon">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.972656 4.62109L9.13758 10.3365C9.79875 10.7994 10.1293 11.0308 10.4889 11.1204C10.8066 11.1996 11.1388 11.1996 11.4564 11.1204C11.816 11.0308 12.1466 10.7994 12.8077 10.3365L20.9727 4.62109M5.77266 17.6211H16.1727C17.8528 17.6211 18.6929 17.6211 19.3346 17.2941C19.8991 17.0065 20.3581 16.5476 20.6457 15.9831C20.9727 15.3413 20.9727 14.5013 20.9727 12.8211V6.42109C20.9727 4.74094 20.9727 3.90086 20.6457 3.25912C20.3581 2.69464 19.8991 2.23569 19.3346 1.94807C18.6929 1.62109 17.8528 1.62109 16.1727 1.62109H5.77266C4.0925 1.62109 3.25242 1.62109 2.61068 1.94807C2.0462 2.23569 1.58726 2.69464 1.29964 3.25912C0.972656 3.90086 0.972656 4.74094 0.972656 6.42109V12.8211C0.972656 14.5013 0.972656 15.3413 1.29964 15.9831C1.58726 16.5476 2.0462 17.0065 2.61068 17.2941C3.25242 17.6211 4.0925 17.6211 5.77266 17.6211Z"
+                stroke="#00AB67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span>Almajles@gmail.com</span>
+        </div>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <a href="#">
+          <img src="./assets/imgs/social/facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/imgs/social/facebook (1).svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/imgs/social/youtube.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/imgs/social/x.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/imgs/social/telegram.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./assets/imgs/social/whatsapp.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="copy-right w-100 py-3">جميع الحقوق محفوظة @2024</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-----------scripts------------>
+  <script src="assets/js/jquery.min.js"></script>
+  <!---------bootstrap--------->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-----------Nice Select------------->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!----------- Data Table ------------>
+  <script src="assets/js/dataTable.min.js"></script>
+  <!------------feather icons---------->
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!------------------------------>
+</body>
+
 </html>

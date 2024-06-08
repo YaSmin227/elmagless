@@ -22,7 +22,7 @@ window.onscroll = function () {
 }
 // nice slsect
 $(document).ready(function () {
-  $('select').niceSelect();
+  $('.nice-select').niceSelect();
 });
 
 
@@ -57,7 +57,7 @@ function auto_backspace() {
     }
   });
 }
-function on_Input_Func(input){
+function on_Input_Func(input) {
   // console.log('done');
   if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
 }
