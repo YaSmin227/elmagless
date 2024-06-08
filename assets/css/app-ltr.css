@@ -134,4 +134,42 @@ body {
   padding-right: 0px;
   padding-left: 20px; }
 
+.tab-items {
+  text-align: left; }
+  .tab-items p {
+    padding-right: 0px !important;
+    padding-left: 20px !important; }
+
+.tab-content .personal-info {
+  padding-left: 60px !important;
+  padding-right: 0px !important;
+  text-align: left; }
+  .tab-content .personal-info::before {
+    content: "";
+    right: auto !important;
+    left: -2px; }
+  .tab-content .personal-info span {
+    padding-left: 15px;
+    padding-right: 0px !important; }
+  .tab-content .personal-info .data-info {
+    padding-right: 0px !important;
+    padding-left: 15px; }
+    .tab-content .personal-info .data-info img {
+      margin-left: 10px;
+      margin-right: 0px !important; }
+.tab-content .invitation-info, .tab-content .notification-info {
+  padding-right: 0px;
+  padding-left: 15px !important; }
+  .tab-content .invitation-info .date span, .tab-content .notification-info .date span {
+    padding-right: 0px !important;
+    padding-left: 5px; }
+.tab-content .accept,
+.tab-content .reject,
+.tab-content .show-invitation {
+  margin-left: 10px;
+  margin-right: 0px !important; }
+
+.notification-info .date span {
+  padding-left: 0px !important; }
+
 /*# sourceMappingURL=app-ltr.css.map */

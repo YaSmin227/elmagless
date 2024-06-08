@@ -248,3 +248,73 @@ body {
   }
 }
 // }
+
+
+
+// ************Dashboard *************************//
+.tab-items {
+  text-align: left;
+  p {
+    padding-right: 0px !important;
+    padding-left: 20px !important;
+  }
+}
+
+.tab-content {
+
+  .personal-info {
+    padding-left: 60px !important;
+    padding-right: 0px !important;
+    text-align: left;
+    &::before {
+      content: "";
+      right: auto !important;
+      left: -2px;
+    }
+    span {
+      padding-left: 15px;
+      padding-right: 0px !important;
+    }
+    .data-info {
+      padding-right: 0px !important;
+      padding-left: 15px;
+      img {
+        margin-left: 10px;
+        margin-right: 0px !important;
+      }
+    }
+  }
+
+  //   Invitation
+  
+
+  .invitation-info,.notification-info {
+    padding-right: 0px;
+    padding-left: 15px !important;
+
+    .date {
+      span {
+        padding-right: 0px !important;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .accept,
+  .reject,
+  .show-invitation {
+    margin-left: 10px ;
+    margin-right: 0px !important;
+  }
+}
+
+// Notifications
+
+.notification-info {
+    .date {
+      span {
+        padding-left: 0px !important;
+      }
+    }
+  }
+ 
