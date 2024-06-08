@@ -25,6 +25,7 @@ $(document).ready(function () {
   $('select').niceSelect();
 });
 
+
 // Toggle hide and show password
 $(document).ready(function () {
   $(".show-hidePassword").click(function () {
@@ -64,6 +65,12 @@ $(document).ready(function () {
   auto_tab_input();
   auto_backspace();
 });
+
+// Data Table
+$(document).ready(function () {
+  $('#example').dataTable();
+});
+
 
 
 // owl carousel

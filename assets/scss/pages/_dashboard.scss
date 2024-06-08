@@ -1,0 +1,204 @@
+.tab-items {
+  border: 1px solid #e6e8ec;
+  border-radius: 8px;
+  text-align: right;
+  //   width: 312px;
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #e6e8ec;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+  .nav.nav-pills {
+    .nav-item {
+      .nav-link {
+        width: 100%;
+        align-items: center;
+        height: 72px;
+        line-height: 24px;
+        &.active {
+          background: #f3fdf7;
+          border-right: 4px solid $main-color;
+          border-radius: 0px;
+        }
+        span {
+          font-size: 16px;
+          color: $text-color;
+          font-weight: 500;
+          border: 0px;
+          border-radius: 0px;
+          width: auto !important;
+          height: auto !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  .profile-content {
+    text-align: center;
+    .member-img {
+      margin-top: 10px;
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .member-name {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: $text-color;
+      margin-bottom: 5px !important;
+    }
+    .member-type {
+      font-size: 14px;
+      color: #64748b;
+      font-size: 400;
+      line-height: 21px;
+      margin-bottom: 5px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      color: $main-color;
+    }
+  }
+  .personal-info {
+    position: relative;
+    padding-right: 60px;
+    text-align: right;
+    &::before {
+      position: absolute;
+      content: "";
+      right: -2px;
+      top: 0px;
+      width: 3px;
+      height: 124.52px;
+      background-color: $main-color;
+    }
+    .info {
+      font-size: 16px;
+      font-weight: 800;
+      color: $main-color;
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+    .data {
+      padding-bottom: 15px;
+      .d-flex {
+        width: 130px;
+      }
+    }
+    span {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: $text-color;
+      padding-right: 15px;
+    }
+    .data-info {
+      font-size: 14px;
+      font-weight: 400;
+      color: #64748b;
+      padding-right: 15px;
+      img {
+        width: 32px;
+        height: 19px;
+        margin-right: 10px;
+      }
+    }
+  }
+  //   Invitation
+  .invitation-number {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $text-color;
+    span {
+      color: $main-color;
+    }
+  }
+  .invitations-details {
+    .row{
+        border-bottom: 1px solid #E5E5E5;
+        .col-md-6{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+    }
+  }
+  .invitation-img {
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .invitation-info {
+    padding-right: 15px;
+    p {
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 5px !important;
+    }
+    .date {
+      font-size: 14px;
+      font-weight: 400;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      span {
+        padding-right: 5px;
+        padding-top: 2px;
+      }
+    }
+  }
+  .accept,
+  .reject,
+  .show-invitation {
+    @extend .main-button;
+    height: 37px;
+    align-items: center;
+    min-width: 76px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .reject {
+    background-color: #ff0000;
+  }
+  .show-invitation {
+    border: 1px solid $main-color;
+    background-color: #fff;
+    color: $main-color;
+  }
+}
+// Data Table Style
+.dt-container {
+  background-color: #64748b;
+  .dt-search {
+    display: none;
+  }
+}
+table {
+  color: #000;
+  tr,
+  td {
+    color: #000;
+  }
+}
