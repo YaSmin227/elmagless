@@ -46,6 +46,7 @@ select:focus-visible,
   border: 1px solid #e2e8f0;
   padding-right: 15px;
 }
+
 .main-button {
   background-color: $main-color;
   padding: 10px;
@@ -60,6 +61,7 @@ select:focus-visible,
   font-size: 14px;
   color: #595566;
 }
+
 .owl-theme {
   .owl-nav {
     position: absolute;
@@ -73,6 +75,7 @@ select:focus-visible,
     gap: 100px;
 
     button {
+
       &.owl-prev,
       &.owl-next {
         width: 28px;
@@ -108,4 +111,24 @@ select:focus-visible,
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00693f;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $main-color;
 }

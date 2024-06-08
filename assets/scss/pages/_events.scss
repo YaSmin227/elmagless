@@ -15,6 +15,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 63.984px;
+
+    @media(width<768px) {
+      line-height: 45px;
+    }
   }
 
   .description {
@@ -51,6 +55,10 @@
       &::placeholder {
         color: #c0c5d0;
       }
+
+      @media(width<768px) {
+        min-width: 240px;
+      }
     }
   }
 }
@@ -62,6 +70,11 @@
   justify-content: center;
   align-items: center;
   gap: 16.955px;
+
+  @media(width<768px) {
+    gap: 12px;
+    padding: 60px 0;
+  }
 
   .link {
     text-transform: none;
@@ -87,6 +100,7 @@
   .news-info {
     padding-right: 20px;
     position: relative;
+
     .news-item {
       img {
         width: 202px !important;
@@ -94,6 +108,7 @@
         height: 188px;
       }
     }
+
     &:before {
       position: absolute;
       content: "";
