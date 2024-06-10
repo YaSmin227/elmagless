@@ -133,3 +133,20 @@ select:focus-visible,
 ::-webkit-scrollbar-thumb:hover {
   background: $main-color;
 }
+
+.main-btn {
+  text-decoration: none;
+  color: $main-color;
+  background-color: #fff;
+  border: 1px solid $main-color;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  background: $main-color;
+  color: #fff;
+}

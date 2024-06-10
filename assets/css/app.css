@@ -104,6 +104,23 @@ select:focus-visible,
   background: #00AB67;
 }
 
+.main-btn {
+  text-decoration: none;
+  color: #00AB67;
+  background-color: #fff;
+  border: 1px solid #00AB67;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  background: #00AB67;
+  color: #fff;
+}
+
 nav {
   background: #fff;
   backdrop-filter: blur(7px);
