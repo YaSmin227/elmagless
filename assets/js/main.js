@@ -108,16 +108,15 @@ $(document).ready(function () {
 // })
 
 // owl carousel
-// if ($('.owl-carousel')) {
-//   $('.owl-carousel').owlCarousel({
-//     rtl: true,
-//     loop: true,
-//     margin: 0,
-//     dots: true,
-//     arrow: true,
-//     nav: true,
-//     items: 1,
-//     center: true,
-//   })
-// }
-$("#country").countrySelect();
+if ($('.owl-carousel')) {
+  $('.owl-carousel').owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 0,
+    dots: true,
+    arrow: true,
+    nav: true,
+    items: 1,
+    center: true,
+  })
+}

@@ -564,3 +564,47 @@
     }
   }
 }
+
+#pills-setting {
+  #phone {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+  }
+
+  .custom-flag {
+    background-color: transparent;
+    border: 1px solid #f0f0f0;
+    color: #64748B;
+    padding: 16px 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
+
+  .dropdown-menu {
+    &.show {
+      transform: translate(-70px, 56px) !important;
+    }
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        width: 100%;
+        padding: 5px 15px;
+        color: #64748B;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}

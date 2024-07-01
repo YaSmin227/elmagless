@@ -15,7 +15,6 @@
   <!-- Data Table -->
   <link rel="stylesheet" href="/assets/css/dataTable.min.css" />
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/country.min.css">
   <link rel="stylesheet" href="/assets/css/app.css" />
   <!-- Style LTR -->
   <!-- <link rel="stylesheet" href="assets/css/app-ltr.css" /> -->
@@ -1300,8 +1299,25 @@
                         <div class="form-input">
                           <label for="phone">رقم الهاتف</label>
                           <div class="d-flex">
-                            <input type="text" id="country" />
-                            <input type="hidden" id="country_code" />
+                            <!-- <input type="text" id="country" />
+                            <input type="hidden" id="country_code" /> -->
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle custom-flag" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/imgs/Flag-Saudi-Arabia.webp" width="25" alt="">
+                                <span dir="ltr">+966</span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">
+                                    <img src="assets/imgs/Flag-Saudi-Arabia.webp" alt="#" width="25">
+                                    <span dir="ltr">+966</span>
+                                  </a></li>
+                                <li><a href="#">
+                                    <img src="assets/imgs/Flag-Saudi-Arabia.webp" alt="#" width="25">
+                                    <span dir="ltr">+966</span>
+                                  </a></li>
+                              </ul>
+                            </div>
                             <input type="text" id="phone" value="+968484141511" dir="ltr">
                           </div>
                         </div>
@@ -1514,7 +1530,6 @@
   <!----------- Data Table ------------>
   <script src="assets/js/dataTable.min.js"></script>
   <!------------feather icons---------->
-  <script src="assets/js/country.min.js"></script>
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/main.js"></script>
   <!------------------------------>
