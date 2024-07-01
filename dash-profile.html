@@ -15,6 +15,7 @@
   <!-- Data Table -->
   <link rel="stylesheet" href="/assets/css/dataTable.min.css" />
   <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/country.min.css">
   <link rel="stylesheet" href="/assets/css/app.css" />
   <!-- Style LTR -->
   <!-- <link rel="stylesheet" href="assets/css/app-ltr.css" /> -->
@@ -1298,7 +1299,11 @@
                         </div>
                         <div class="form-input">
                           <label for="phone">رقم الهاتف</label>
-                          <input type="text" id="phone" value="+968484141511">
+                          <div class="d-flex">
+                            <input type="text" id="country" />
+                            <input type="hidden" id="country_code" />
+                            <input type="text" id="phone" value="+968484141511" dir="ltr">
+                          </div>
                         </div>
                         <div class="form-input">
                           <label for="email">البريد الالكتروني</label>
@@ -1509,9 +1514,11 @@
   <!----------- Data Table ------------>
   <script src="assets/js/dataTable.min.js"></script>
   <!------------feather icons---------->
+  <script src="assets/js/country.min.js"></script>
   <script src="assets/js/all.min.js"></script>
   <script src="assets/js/main.js"></script>
   <!------------------------------>
+
 </body>
 
 </html>
